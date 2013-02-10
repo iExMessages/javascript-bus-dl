@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
           <h3>Beginning Javascript</h3>
           <h4>Class 4</h4>
         </section>
-        
+
         <!-- Welcome-->
         <section>
           <h3>Welcome!</h3>
@@ -57,7 +57,7 @@
           </ul>
           </div>
         </section>
-        
+
         <section>
           <h3>Warning</h3>
           <div style ="font-size=1.2em" class = "yellow">
@@ -74,7 +74,7 @@
             <li class = "fragment">How we can access information from sites that are not our own (Twitter, Meetup, Facebook, Foursquare)</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>What is an API?</h3>
           <ul>
@@ -86,7 +86,7 @@
             </li>
           </ul>
         </section>
-        
+
         <!-- What is AJAX-->
         <section>
           <h3>What is AJAX?</h3>
@@ -104,7 +104,7 @@
             <li class = "fragment">Requests and results can be in JavaScript or XML</li>
           </ul>
         </section>
-        
+
         <!-- What is REST-->
         <section>
           <h3>What is REST?</h3>
@@ -119,10 +119,10 @@
                 <li class = "fragment"><span class = "blue">Value</span> -- value for parameter. Defined by you!</li>
               </ul>
             </li>
-            
+
           </ul>
         </section>
-        
+
         <section>
           <h3>Where do I learn about an API?</h3>
           <p>All (good) APIs have documentation</p>
@@ -132,7 +132,7 @@
             <li>Meetup (<a href = "http://www.meetup.com/meetup_api/" target = "_blank">http://www.meetup.com/meetup_api/</a>)</li>
             <li>FourSquare (<a href = "https://developer.foursquare.com/">https://developer.foursquare.com/</a>)</li>
         </section>
-        
+
         <!-- What is JSON-->
         <section>
           <h3>What is JSON?</h3>
@@ -143,7 +143,7 @@
             <li class = "fragment">JavaScript objects</li>
           </ul>
         </section>
-        
+
         <!-- Getting started!-->
         <section>
          <h3>Getting started!</h3>
@@ -155,7 +155,7 @@
            <li class = "fragment">More secure for you -- people can't pretend to be your website</li>
           </ul>
         </section>
-        
+
         <!-- Meetup-->
         <section>
           <h3>Meetup API</h3>
@@ -163,27 +163,27 @@
           <p><a href = "http://www.meetup.com/meetup_api/" target = "_blank">Documentation</a></p>
           <img src = "images/meetup.png" />
         </section>
-        
+
         <section>
           <h3>Meetup API</h3>
           <p>We will be finding interesting Meetups near us</p>
           <p><a href = "http://www.meetup.com/meetup_api/docs/2/open_events/" target = "_blank">Open Events</a></p>
           <img src = "images/meetup_open.png"/>
         </section>
-        
+
         <section>
           <h3>Meetup API</h3>
           <p>Try it in the meetup console</p>
           <p><a href = "http://www.meetup.com/meetup_api/console/?path=/2/open_events" target = "_blank">Open Events Console</a></p>
           <img src = "images/meetup_console.png"/>
         </section>
-        
+
         <section>
           <h3>Meetup API</h3>
           <p>Try it in the meetup console</p>
           <img src = "images/meetup_results.png"/>
         </section>
-        
+
         <!-- jQuery Ajax-->
         <section>
           <h3>jQuery Ajax</h3>
@@ -204,19 +204,19 @@
   		},
   		error: function(data) {
   			 // code with error returned
-  		}				
+  		}
   	});
           	</code></pre>
           </div>
         </section>
-        
+
         <section>
           <h3>jQuery Ajax</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
     $.ajax({
   		url: 'http://site.com',
-  		...			
+  		...
   	});
           	</code></pre>
           </div>
@@ -227,7 +227,7 @@
             <li class = "fragment"><span class = "blue">url</span> -- first property, the url where you will send the AJAX request</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>jQuery Ajax</h3>
           <div class = "fragment">
@@ -237,7 +237,7 @@
 	  parameter: 'value',
 	  parameter: 'value'
 	},
-	...	
+	...
           	</code></pre>
           </div>
           <ul>
@@ -252,7 +252,7 @@
             </li>
           </ul>
         </section>
-        
+
         <section>
           <h3>jQuery Ajax</h3>
           <div class = "fragment">
@@ -261,7 +261,7 @@
   crossDomain: true,
 	dataType: 'jsonp',
 	type: "GET",
-	...	
+	...
           	</code></pre>
           </div>
           <ul>
@@ -275,8 +275,8 @@
             </li>
           </ul>
         </section>
-        
-        
+
+
         <section>
           <h3>jQuery Ajax</h3>
           <div class = "fragment">
@@ -288,7 +288,7 @@
 	error: function(data) {
 		 // code with error returned
 	}
-	...	
+	...
           	</code></pre>
           </div>
           <ul>
@@ -296,7 +296,7 @@
             <li class = "fragment"><span class = "blue">error</span> -- code that will execute if results return an error</li>
           </ul>
         </section>
-        
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It!</h3>
@@ -309,12 +309,12 @@
             <li>Call this new function in document ready</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>Let's Develop It!</h3>
           <img src = "images/console.png"/>
         </section>
-        
+
         <section>
           <h3>Let's Develop It!</h3>
           <ul>
@@ -327,7 +327,7 @@
             <li>Append the new div to the div "events"</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>Let's Develop It!</h3>
           <ul>
@@ -335,7 +335,7 @@
             <li>On submit, call the same Meetup open events method, but with the user's values</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>Bonus</h3>
           <p class = "blue">Still have time? Can't stop learning?</p>
@@ -378,8 +378,8 @@
 				progress: true,
 				history: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				theme: Reveal.getQueryHash().theme || 'gdicool', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [

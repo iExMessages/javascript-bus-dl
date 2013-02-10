@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
           <h3>Beginning Javascript</h3>
           <h4>Class 3</h4>
         </section>
-        
+
         <!-- Welcome-->
         <section>
           <h3>Welcome!</h3>
@@ -57,7 +57,7 @@
           </ul>
           </div>
         </section>
-        
+
         <!-- What is a library-->
         <section>
           <h3>What is a library?</h3>
@@ -68,7 +68,7 @@
             <li class = "fragment">And... <span class ="blue">Save time!</span></li>
           </ul>
         </section>
-        
+
         <!-- What is jQuery-->
         <section>
           <h3>What is jQuery?</h3>
@@ -81,7 +81,7 @@
             <li class = "fragment">JavaScript effects and animations</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>Why use jQuery?</h3>
           <ul>
@@ -91,7 +91,7 @@
             <li class = "fragment">Used by nearly 20 million(!) websites</li>
           </ul>
         </section>
-        
+
         <section>
           <h3>jQuery: A Brief History</h3>
           <ul>
@@ -102,7 +102,7 @@
             <li class = "fragment">December 2009: jQuery wins .Net Magazine's Award for Best Open Source Application</li>
           </ul>
         </section>
-        
+
         <!-- Including jquery-->
         <section>
           <h3>Including jQuery</h3>
@@ -128,7 +128,7 @@
             Note: live code can change! It's always best to download
           </div>
         </section>
-        
+
         <!-- Selectors-->
         <section>
           <h3>jQuery Selectors</h3>
@@ -147,13 +147,13 @@ var img = $("#mainpicture"); //img with id mainpicture
             </li>
             <li class = "fragment">Class name (.result, .picture)
             <pre><code contenteditable class = "javascript">
-var images = $(".picture"); //All images with class picture 
-            </code></pre> 
+var images = $(".picture"); //All images with class picture
+            </code></pre>
             </li>
           </ul>
         </section>
-      
-        
+
+
         <!-- Actions-->
         <section>
           <h3>jQuery Actions</h3>
@@ -165,17 +165,17 @@ var images = $(".picture"); //All images with class picture
           <div class = "fragment">
             Action format
             <pre><code contenteditable class = "javascript">
-        $(selector).action();     
+        $(selector).action();
             </code></pre>
           </div>
         </section>
-        
+
         <!-- Attributes and css-->
         <section>
           <h3>Updating attributes and css</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "html">
-  &lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">         
+  &lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
             </code></pre>
           </div>
           <div class = "fragment">
@@ -195,13 +195,13 @@ var images = $(".picture"); //All images with class picture
             </code></pre>
           </div>
         </section>
-        
+
         <!-- html values-->
         <section>
           <h3>Updating values and html</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "html">
-  &lt;div class = "results">Boo!&lt;/div>         
+  &lt;div class = "results">Boo!&lt;/div>
             </code></pre>
           </div>
           <div class = "fragment">
@@ -213,13 +213,13 @@ var images = $(".picture"); //All images with class picture
             </code></pre>
           </div>
         </section>
-        
+
         <!-- Append and prepend-->
         <section>
           <h3>Append and Prepend</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "html">
-  &lt;div class = "results">Boo!&lt;/div>         
+  &lt;div class = "results">Boo!&lt;/div>
             </code></pre>
           </div>
           <div class = "fragment">
@@ -237,7 +237,7 @@ var images = $(".picture"); //All images with class picture
             </code></pre>
           </div>
         </section>
-        
+
         <section>
           <h3>Creating new element</h3>
           <div class = "fragment">
@@ -249,14 +249,14 @@ var images = $(".picture"); //All images with class picture
             Seriously. That's it!
           </div>
         </section>
-        
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It!</h3>
           <p>Try to convert last week's DOM interaction into jQuery.</p>
           <p>Don't forget to include jQuery in your html head!</p>
         </section>
-        
+
         <!-- Document Ready-->
         <section>
           <h3>Document Ready</h3>
@@ -268,7 +268,7 @@ var images = $(".picture"); //All images with class picture
             Document ready is a method called when the page is loaded
             <pre><code contenteditable class = "javascript">
         $(document).ready(function(){
-          
+
         });
             </code></pre>
           </div>
@@ -276,7 +276,7 @@ var images = $(".picture"); //All images with class picture
             <span class = "yellow">Note:</span> The function() inside is an "anonymous function". It has no name, but still performs like a function.
           </div>
         </section>
-        
+
         <!-- HTML Events-->
         <section>
           <h3>HTML events</h3>
@@ -289,7 +289,7 @@ var images = $(".picture"); //All images with class picture
             <li class = "fragment"><a href = "http://api.jquery.com/category/events/" target = "_blank">Other events</a></li>
           </ul>
         </section>
-        
+
         <section>
           <h3>Handling events</h3>
       <pre><code contenteditable class = "javascript">
@@ -309,7 +309,7 @@ var images = $(".picture"); //All images with class picture
             <div>Here <span class = "green">$(this)</span> is the <span class = "blue">$('.box')</span> that the mouse entered.
           </div>
         </section>
-        
+
         <section>
           <h3>Handling event examples</h3>
           <div class = "fragment">
@@ -334,7 +334,7 @@ var images = $(".picture"); //All images with class picture
           </code></pre>
           </div>
         </section>
-        
+
         <section>
           <h3>Combining events</h3>
           <p>If you want multiple events to happen on the same element, you should use the bind method</p>
@@ -354,7 +354,7 @@ var images = $(".picture"); //All images with class picture
           </code></pre>
           </div>
         </section>
-        
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
@@ -366,7 +366,7 @@ var images = $(".picture"); //All images with class picture
             <li>Bonus: change all the onclick events to jQuery click events</li>
           </ul>
         </section>
-        
+
         <!-- HTML forms-->
         <section>
           <h3>HTML forms</h3>
@@ -390,7 +390,7 @@ var images = $(".picture"); //All images with class picture
             </code></pre>
           </div>
         </section>
-        
+
         <section>
           <h3>HTML forms</h3>
           <p>HTML Forms allow users to enter information</p>
@@ -411,7 +411,7 @@ var images = $(".picture"); //All images with class picture
 </form>
           </div>
         </section>
-        
+
         <!-- JavaScript and HTML Forms-->
         <section>
           <h3>Values from Forms</h3>
@@ -432,7 +432,7 @@ var images = $(".picture"); //All images with class picture
             </code></pre>
           </div>
         </section>
-        
+
         <section>
           <h3>Values from Forms</h3>
           <p>jQuery has an event for form submission</p>
@@ -446,7 +446,7 @@ var images = $(".picture"); //All images with class picture
             <span class = "yellow">"return false"</span> to prevent the form trying to submit to a server.
           </div>
         </section>
-        
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
@@ -487,8 +487,8 @@ var images = $(".picture"); //All images with class picture
 				progress: true,
 				history: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				theme: Reveal.getQueryHash().theme || 'gdicool', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
