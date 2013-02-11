@@ -183,7 +183,7 @@
         <section>
           <h3>Variables</h3>
           <div class = "fragment left-align">
-            <p>Variables hold content</p>
+            <p>Variables store information</p>
             <p>Words, numbers, true/false, basically any kind of content</p>
           </div>
           <div class = "fragment">
@@ -219,47 +219,75 @@
 
         <!-- Data Types-->
         <section>
-          <h3>Data types</h3>
-          <div class = "fragment">
-            <p>string -- a group of characters in quotes</p>
+          <h3>Data type: String</h3>
+          <p>A group of characters in quotes</p>
+
+          <div class="fragment">
             <pre><code contenteditable class ="javascript">
-              var fruit = "banana";
+  var fruit = "banana";
             </code></pre>
+            <p>You can use double quotes</p>
           </div>
-          <div class = "fragment">
-            <p>number -- (well, a number)</p>
+
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  var fruit = 'banana';
+            </code></pre>
+            <p>or single quotes</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Data type: Number</h3>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  var year = 2012;
+            </code></pre>
+            <p>Integers</p>
+          </div>
+
+          <div class="fragment">
             <pre><code contenteditable class ="javascript">
               var pi = 3.14;
-              var year = 2012;
             </code></pre>
+            <p>Decimals</p>
           </div>
-          <div class = "fragment">
-            <p>boolean -- yes or no</p>
+        </section>
+
+        <section>
+          <h3>Data type: Boolean</h3>
+          <p>true or false</p>
+          <div class="fragment">
             <pre><code contenteditable class ="javascript">
-              var skyIsBlue = true;
-              var grassIsPink = false;
+  var skyIsBlue = true;
+  var grassIsPink = false;
             </code></pre>
           </div>
         </section>
 
-        <!-- Data Types-->
+        <section>
+          <h3>Data type: Undefined</h3>
+          <p>no value yet</p>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  var favoriteDinosaur;
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Data type: Null</h3>
+          <p>A purposely empty value (not the same as 0)</p>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  var myTigersName = null;
+            </code></pre>
+          </div>
+        </section>
+
         <section>
           <h3>Data types</h3>
-          <div class = "fragment">
-            <p>undefined -- no value yet</p>
-            <pre><code contenteditable class ="javascript">
-              var favoriteDinosaur;
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            <p>null -- a purposely empty value (not the same as 0)</p>
-            <pre><code contenteditable class ="javascript">
-              var myTigersName = null;
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            In nerd speak, JavaScript variables are "loosely typed". You don't know the kind of value a variable will have until you assign it.
-          </div>
+          <p>JavaScript variables are "loosely typed". You don't know the kind of value a variable will have until you assign it.</p>
         </section>
 
         <!-- Naming rules-->
