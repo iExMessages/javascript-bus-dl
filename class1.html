@@ -372,6 +372,56 @@ var sentence = "My dinosaur is a " + dinosaur + ". It's name is " + name + ".";
           </div>
         </section>
 
+
+        <section>
+          <h3>Adding JS to HTML: Inline</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+    &lt;/head>
+    &lt;body>
+      My site!
+      &lt;a href="#" onclick="alert('Hello World!');">click me&lt;/a>
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+        </section>
+        <section>
+          <h3>Adding JS to HTML: Embedded</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+      &lt;script>
+        alert("Hello World!");
+      &lt;/script>
+    &lt;/head>
+    &lt;body>
+      My site!
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+        </section>
+        <section>
+          <h3>Adding JS to HTML: External</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+      &lt;script src="myjavascriptfile.js">&lt;/script>
+    &lt;/head>
+    &lt;body>
+      My site!
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+          <p>myjavascriptfile.js</p>
+          <pre><code contenteditable class="javascript">
+  alert("Hello World!");
+          </code></pre>
+        </section>
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
