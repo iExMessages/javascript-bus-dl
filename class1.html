@@ -212,12 +212,84 @@
           <p class="fragment">This is very useful for debugging</p>
         </section>
 
+        <!-- Data Types-->
+        <section>
+          <h2>Data Types</h2>
+          <p>Information (data) in JavaScript <br/>comes in different types.</p>
+        </section>
+        <section>
+          <h3>Data type: String</h3>
+          <p>A group of characters in quotes</p>
+          <div class="fragment">
+            <p>You can use double quotes</p>
+            <pre><code contenteditable class ="javascript">
+  console.log("Hello World");
+            </code></pre>
+          </div>
+
+          <div class="fragment">
+            <p>or single quotes</p>
+            <pre><code contenteditable class ="javascript">
+  console.log('Hello World!');
+            </code></pre>
+          </div>
+        </section>
+        <section>
+          <div>
+            Make sure your quotes match!
+          </div>
+          <img src="images/quote-mix-error.png"/>
+        </section>
+
+        <section>
+          <h3>Data type: Number</h3>
+          <div class="fragment">
+            <p>Integers</p>
+            <pre><code contenteditable class ="javascript">
+  console.log(2012);
+            </code></pre>
+          </div>
+
+          <div class="fragment">
+            <p>Decimals</p>
+            <pre><code contenteditable class ="javascript">
+  console.log(3.14);
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Data type: Boolean</h3>
+          <p>true or false</p>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  console.log(true);
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  console.log(false);
+            </code></pre>
+          </div>
+          <p class="fragment">true/false must be all lowercase</p>
+        </section>
+
+        <section>
+          <h3>Data type: Null</h3>
+          <p>A special keyword denoting an empty (null) value.</p>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  console.log(null);
+            </code></pre>
+          </div>
+          <p class="fragment">null must be all lowercase</p>
+        </section>
+
         <!-- Variables-->
         <section>
           <h3>Variables</h3>
-          <div class = "fragment left-align">
+          <div>
             <p>Variables store information</p>
-            <p>Words, numbers, true/false, basically any kind of content</p>
           </div>
           <div class = "fragment">
             <p>Declare a variable (Give it a name)</p>
@@ -235,7 +307,7 @@
 
         <section>
           <h3>Variables</h3>
-          <div class = "fragment">
+          <div>
             <p>Declare and initialize at the same time!</p>
             <pre><code contenteditable class ="javascript">
   var bananas = 5;
@@ -248,84 +320,6 @@
             </code></pre>
             <p>(I ate a banana)</p>
           </div>
-        </section>
-
-        <!-- Data Types-->
-        <section>
-          <h3>Data type: String</h3>
-          <p>A group of characters in quotes</p>
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var fruit = "banana";
-            </code></pre>
-            <p>You can use double quotes</p>
-          </div>
-
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var fruit = 'banana';
-            </code></pre>
-            <p>or single quotes</p>
-          </div>
-        </section>
-        <section>
-          <div>
-            Make sure your quotes match!
-          </div>
-          <img src="images/quote-mix-error.png"/>
-        </section>
-
-        <section>
-          <h3>Data type: Number</h3>
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var year = 2012;
-            </code></pre>
-            <p>Integers</p>
-          </div>
-
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var pi = 3.14;
-            </code></pre>
-            <p>Decimals</p>
-          </div>
-        </section>
-
-        <section>
-          <h3>Data type: Boolean</h3>
-          <p>true or false</p>
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var skyIsBlue = true;
-  var grassIsPink = false;
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>Data type: Undefined</h3>
-          <p>no value yet</p>
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var favoriteDinosaur;
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>Data type: Null</h3>
-          <p>A purposely empty value (not the same as 0)</p>
-          <div class="fragment">
-            <pre><code contenteditable class ="javascript">
-  var myTigersName = null;
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>Data types</h3>
-          <p>JavaScript variables are "loosely typed". You don't know the kind of value a variable will have until you assign it.</p>
         </section>
 
         <!-- Naming rules-->
@@ -353,7 +347,7 @@
 
         <section>
           <h3>Naming rules</h3>
-          <p>Most people stick with either</p>
+          <p>Most people use either</p>
           <div class = "fragment">
             <p>Snake case</p>
             <pre><code contenteditable class ="javascript">
@@ -370,6 +364,32 @@
   var firstName;
             </code></pre>
           </div>
+          <p class="fragment">Stick with one for consistency</p>
+        </section>
+
+        <section>
+          <h3>Data type: Undefined</h3>
+          <p>no value yet</p>
+          <div class="fragment">
+            <pre><code contenteditable class ="javascript">
+  var favoriteDinosaur;
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>JS data types are "loosely typed"</h3>
+          <div class="left-align">
+            <p>You don't know the data type of a variable until you assign it.</p>
+            <p class="fragment">The type can change when it is assigned different values.</p>
+          </div>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  var looseType;      // I am undefined
+  looseType = 10;     // I am a number
+  looseType = "hi!";  // I am a string
+  looseType = false;  // I am a boolean
+  looseType = null;   // I am null
+          </code></pre>
         </section>
 
         <!-- Expressions -->
