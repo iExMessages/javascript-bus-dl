@@ -644,66 +644,183 @@
 
         <!-- If statement-->
         <section>
-          <h3>The if statement</h3>
-          <p>Javascript can run through code based on conditions</p>
+          <h3>if statement</h3>
+          <p>Runs some JavaScript based on conditions</p>
           <div class = "fragment">
-          <pre><code contenteditable class ="javascript">
-  if (condition here){
+            <pre><code contenteditable class ="javascript">
+  if (conditions) {
     // statement to execute
   }
-          </code></pre>
+            </code></pre>
+            <p>If the conditions evaluate as <strong>true</strong>, <br/>
+               the JavaScript inside the braces runs.</p>
           </div>
+
           <div class = "fragment">
-          <pre><code contenteditable class ="javascript">
+            <pre><code contenteditable class ="javascript">
   var bananas = 1;
-  if (bananas < 2){
-    console.log("You should buy more bananas!")
+  if (bananas < 2) {
+    console.log("You should buy more bananas!");
+  }
+            </code></pre>
+          </div>
+          <p class="fragment">What would happen if bananas was set to 3?</p>
+        </section>
+
+        <section>
+          <h3>block statement</h3>
+          <p>A group of statements deliniated by braces.</p>
+          <pre><code contenteditable class ="javascript">
+  {
+    console.log("statement 1");
+    console.log("statement 2");
+    console.log("statement 3");
   }
           </code></pre>
-          </div>
-          <div class = "fragment">
-          Note: you can write comments that only you, not the browser reads
-          <pre><code contenteditable class ="javascript">
-  // comment on one line
-  /* comment on
-    multiple lines
-   */
-          </code></pre>
-          </div>
         </section>
 
         <!-- Comparison-->
         <section>
-          <h3>Comparisons</h3>
-          <table>
-            <tr class = "fragment"><td> === </td><td> Equality </td></tr>
-            <tr class = "fragment"><td> !== </td><td> Inequality </td></tr>
-            <tr class = "fragment"><td> > </td><td> Greater than </td></tr>
-            <tr class = "fragment"><td> >= </td><td> Greater than or equal to </td></tr>
-            <tr class = "fragment"><td> < </td><td> Less than </td></tr>
-            <tr class = "fragment"><td> <= </td><td> Less than or equal to </td></tr>
-          </table>
-          <p class = "fragment green"> Don't confuse = (assign a value) <br/>with === (compare a value)</p>
+          <h2>Comparisons</h2>
+          <p>Compare the values and return a logical value based on whether the comparison is true</p>
+          <div class="fragment">
+            <p>Frequently used in conditionals like if</p>
+            <pre><code contenteditable class ="javascript">
+  (bananas < 2)
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Comparison: Equal</h3>
+          <p>Returns true if the values are equal</p>
+          <pre><code contenteditable class ="javascript">
+  1 == 1; // true
+  1 == 2; // false
+  "this" == "this" // true
+  "this" == "that" // false
+  10 == "10" // ???
+          </code></pre>
+          <div class="fragment">
+            <p>Use strict equals to check the data type (recommended)</p>
+            <pre><code contenteditable class ="javascript">
+  1 === 1; // true
+  1 === 2; // false
+  "this" === "this" // true
+  "this" === "that" // false
+  10 === "10" // false
+          </code></pre>
+          </div>
+          <p class = "fragment green"> Don't confuse = (assign a value) <br/>with == or === (compare a value)</p>
+        </section>
+
+        <section>
+          <h3>Comparison: Not Equal</h3>
+          <p>Returns true if the values are not equal</p>
+          <pre><code contenteditable class ="javascript">
+  1 != 1; // false
+  1 != 2; // true
+  "this" != "this" // false
+  "this" != "that" // true
+  10 != "10" // false
+          </code></pre>
+          <div class="fragment">
+            <p>Use strict not equals to check the data type (recommended)</p>
+            <pre><code contenteditable class ="javascript">
+  1 !== 1; // false
+  1 !== 2; // true
+  "this" !== "this" // false
+  "this" !== "that" // true
+  10 !== "10" // true
+          </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Comparison: Greater than</h3>
+          <pre><code contenteditable class ="javascript">
+  3 > 1; // true
+  2 > 4; // false
+          </code></pre>
+          <br/>
+          <div class="fragment">
+          <h3>Comparison: Greater than or equal</h3>
+          <pre><code contenteditable class ="javascript">
+  3 >= 1; // true
+  3 >= 3; // true
+  2 >= 4; // false
+          </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Comparison: Less than</h3>
+          <pre><code contenteditable class ="javascript">
+  1 < 3; // true
+  4 < 2; // false
+          </code></pre>
+          <br/>
+          <div class="fragment">
+          <h3>Comparison: Less than or equal</h3>
+          <pre><code contenteditable class ="javascript">
+  1 <= 3; // true
+  3 <= 3; // true
+  4 <= 2; // false
+          </code></pre>
+          </div>
         </section>
 
         <!-- Logic-->
         <section>
-          <h3>Logic</h3>
-          <table>
-            <tr class = "fragment"><td> && </td><td> AND </td></tr>
-            <tr class = "fragment"><td> || </td><td> OR </td></tr>
-            <tr class = "fragment"><td> ! </td><td> NOT </td></tr>
-          </table>
-          <div class = "fragment">
+          <h2>Logic Operators</h2>
+          <p>Combine or modify boolean values.</p>
+        </section>
+        <section>
+          <h3>Logic Operator: AND</h3>
+          <p>Returns true if all values are true.</p>
+          <p>Otherwise it returns false.</p>
+          <pre><code contenteditable class ="javascript">
+  true && true;   // true
+  true && false;  // false
+  false && false; // false
+  true && true && false && true; // ???
+          </code></pre>
+        </section>
+        <section>
+          <h3>Logic Operator: OR</h3>
+          <p>Returns true if any value is true.</p>
+          <p>Returns false if all values are false.</p>
+          <pre><code contenteditable class ="javascript">
+  true || true;   // true
+  true || false;  // true
+  false || false; // false
+  false || false || true || false; // ???
+          </code></pre>
+        </section>
+        <section>
+          <h3>Logic Operator: NOT</h3>
+          <p>Inverts the boolean value.</p>
+          <pre><code contenteditable class ="javascript">
+  !false; // true
+  !true;  // false
+  !(1 === 1) // ???
+          </code></pre>
+        </section>
+        <section>
+          <h3>Logic Operator: Example</h3>
+          <div>
             <pre><code contenteditable class ="javascript">
   var bananas = 5;
   var oranges = 2;
+
   if (bananas > 3 && oranges > 3){
     console.log('Eat fruit!');
   }
+
   if (bananas < 2 || oranges < 2){
     console.log('Buy fruit!');
   }
+
   if !(bananas >== 0){
     console.log('How do you have negative bananas?');
   }
