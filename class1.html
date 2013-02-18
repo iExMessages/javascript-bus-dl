@@ -394,41 +394,128 @@
 
         <!-- Expressions -->
         <section>
-          <h3>Expressions</h3>
-          <div class = "fragment">
-            <p>Math-y expressions!</p>
-            <pre><code contenteditable class ="javascript">
+          <h2>Arithmetic Expressions</h2>
+          <p>Math-y expressions!</p>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Addition</h3>
+          <pre><code contenteditable class ="javascript">
   var bananas = 5;
   var oranges = 2;
   var fruit = bananas + oranges;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Subtraction</h3>
+          <pre><code contenteditable class ="javascript">
+  var bananas = 5;
+  var people = 3;
+  var leftover_fruit = bananas - people;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Multiplication</h3>
+          <pre><code contenteditable class ="javascript">
+  var seconds_per_minute = 60;
+  var minutes_per_hour = 60;
+  var seconds_per_hour = seconds_per_minute * minutes_per_hour;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Division</h3>
+          <pre><code contenteditable class ="javascript">
+  var days_per_year = 365;
+  var days_per_week = 7;
+  var weeks_per_year = days_per_year / days_per_week;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Modulus</h3>
+          <p>Returns the integer remainder of <br/>dividing the two operands.</p>
+          <pre><code contenteditable class ="javascript">
+  var grapes = 37;
+  var people = 7;
+  var leftover = grapes % people;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Increment</h3>
+          <p>Increments the value by 1</p>
+          <div class="fragment">
+            <p>Postfix - returns the value before adding one.</p>
+            <pre><code contenteditable class ="javascript">
+    var current_hour = 8;
+    current_hour++; // Returns 8
+    current_hour;   // Returns 9
             </code></pre>
           </div>
-          <div class = "fragment">
-            <table>
-              <tr><th>Symbol</th><th>Meaning</th></tr>
-              <tr><td>+</td><td>Addition</td></tr>
-              <tr><td>-</td><td>Subtraction</td></tr>
-              <tr><td>*</td><td>Multiplication</td></tr>
-              <tr><td>/</td><td>Division</td></tr>
-              <tr><td>%</td><td>Modulus</td></tr>
-              <tr><td>++</td><td>Increment</td></tr>
-              <tr><td>--</td><td>Decrement</td></tr>
-            </table>
+          <div class="fragment">
+            <p>Prefix - returns the value after adding one.</p>
+            <pre><code contenteditable class ="javascript">
+    var current_hour = 8;
+    ++current_hour; // Returns 9
+    current_hour;   // Returns 9
+            </code></pre>
+          </div>
+        </section>
+        <section>
+          <h3>Arithmetic Expressions: Decrement</h3>
+          <p>Decrease the value by 1</p>
+          <div class="fragment">
+            <p>Postfix - returns the value before subtracting one.</p>
+            <pre><code contenteditable class ="javascript">
+    var current_hour = 8;
+    current_hour--; // Returns 8
+    current_hour;   // Returns 7
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <p>Prefix - returns the value after subtracting one.</p>
+            <pre><code contenteditable class ="javascript">
+    var current_hour = 8;
+    --current_hour; // Returns 7
+    current_hour;   // Returns 7
+            </code></pre>
           </div>
         </section>
 
-        <!-- -->
         <section>
-          <h3>Expressions</h3>
-          <div class = "fragment">
-            <p>Word-y expressions!</p>
-            <pre><code contenteditable class ="javascript">
-  var name = "Mitch";
-  var dinosaur = "Stegosaurus";
-  var sentence = "My dinosaur is a " + dinosaur +
-                 ". It's name is " + name + ".";
-            </code></pre>
-          </div>
+          <h2>String Expressions</h2>
+          <p>Word-y expressions!</p>
+        </section>
+        <section>
+          <h3>String Expressions: Concatenation</h3>
+          <p>Combines strings together</p>
+          <pre><code contenteditable class ="javascript">
+  var phrase = "My name is ";
+  var name = "Pat";
+  var sentence = phrase + name + ".";
+          </code></pre>
+        </section>
+
+        <section>
+          <p>We also used + for addition.</p>
+          <p>What happens when we mix numbers and strings?</p>
+          <pre><code contenteditable class ="javascript">
+  var num = 5;    // This is a number
+  var str = "10"; // This is a string
+  num + num; // 10
+  str + str; // "1010"
+  num + str; // ????
+  str + num; // ????
+          </code></pre>
+        </section>
+        <section>
+          <pre><code contenteditable class ="javascript">
+  var num = 5;    // This is a number
+  var str = "10"; // This is a string
+  num + num; // 10
+  str + str; // "1010"
+  num + str; // "510"
+  str + num; // "105"
+          </code></pre>
+          <p class="fragment">Be careful when you mix data types. <br/>
+             You can get unexpected results.</p>
         </section>
 
 
@@ -479,10 +566,11 @@
           <pre><code contenteditable class="javascript">
   alert("Hello World!");
           </code></pre>
+          <p class="fragment">This is usually the best way to add JavaScript.</p>
         </section>
 
         <!-- Exercise-->
-        <section>
+        <section data-state="activity">
           <h3>Let's Develop It</h3>
           <p>Create a new html file</p>
           <pre><code class ="html">
@@ -497,7 +585,7 @@
           </code></pre>
         </section>
 
-        <section>
+        <section data-state="activity">
           <h3>Let's Develop It</h3>
           <p>Create a new javascript file (a file that ends in .js)</p>
           <p>Link it to your html file</p>
@@ -514,7 +602,7 @@
           </code></pre>
         </section>
 
-        <section>
+        <section data-state="activity">
           <h3>Let's Develop It</h3>
           <p>Life time supply calculator</p>
           <p>Ever wonder how much a lifetime supply of your favorite snack or drink is?</p>
