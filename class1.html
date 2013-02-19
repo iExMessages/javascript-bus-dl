@@ -788,8 +788,14 @@
           <pre><code contenteditable class ="javascript">
   true && true;   // true
   true && false;  // false
+  false && true;  // false
   false && false; // false
-  true && true && false && true; // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  true && true && false; // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  (1 === 1) && ("this" != "that"); // ???
           </code></pre>
         </section>
         <section>
@@ -799,8 +805,14 @@
           <pre><code contenteditable class ="javascript">
   true || true;   // true
   true || false;  // true
+  false || true;  // true
   false || false; // false
-  false || false || true || false; // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  false || false || true; // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  (3 == 4) || (true); // ???
           </code></pre>
         </section>
         <section>
@@ -809,7 +821,12 @@
           <pre><code contenteditable class ="javascript">
   !false; // true
   !true;  // false
-  !(1 === 1) // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  !(1 === 1); // ???
+          </code></pre>
+          <pre class="fragment"><code contenteditable class ="javascript">
+  !(6 > 2); // ???
           </code></pre>
         </section>
         <section>
