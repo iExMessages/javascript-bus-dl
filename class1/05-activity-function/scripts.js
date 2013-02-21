@@ -4,11 +4,11 @@ var month = today.getMonth() + 1;
 var day = today.getDate();
 
 if(month === 2 && day === 20) {
-  alert("Today is my birthday!");
+  console.log("Today is my birthday!");
 } else if(month === 12) {
-  alert("Happy holidays!")
+  console.log("Happy holidays!")
 } else {
-  alert("Welcome to my site!")
+  console.log("Welcome to my site!")
 }
 
 
