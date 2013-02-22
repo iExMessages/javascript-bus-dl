@@ -337,10 +337,10 @@ var images = $(".picture"); //All images with class picture
 
         <section>
           <h3>Combining events</h3>
-          <p>If you want multiple events to happen on the same element, you should use the bind method</p>
+          <p>If you want multiple events to happen on the same element, you should use the on method</p>
           <div class = "fragment">
           <pre><code contenteditable class = "javascript">
-      $('.box').bind({
+      $('.box').on({
         click: function() {
           $(this).css('background-color', 'green')
         },
