@@ -1,0 +1,9 @@
+body {
+  background-color: #CBEEE0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.photo {
+  float: left;
+  margin: 0 1em 1em 1em;
+}

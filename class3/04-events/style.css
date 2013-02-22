@@ -1,0 +1,20 @@
+body {
+  background-color: #CBEEE0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.photo {
+  float: left;
+  margin: 0 1em 1em 1em;
+}
+
+#theButton {
+  font-weight: bold;
+  text-align: center;
+  background-color: blue;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+}
