@@ -224,6 +224,105 @@
           </div>
         </section>
 
+        <section>
+          <h2>Adding JS to HTML</h2>
+          <p>Three main ways, just like CSS</p>
+        </section>
+
+        <section>
+          <h3>Adding JS to HTML: Inline</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+    &lt;/head>
+    &lt;body>
+      My site!
+      &lt;a href="#" onclick="alert('Hello World!');">click me&lt;/a>
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+          <p class="fragment">We'll talk more about this one later</p>
+        </section>
+        <section>
+          <h3>Adding JS to HTML: Embedded</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+      &lt;script>
+        alert("Hello World!");
+      &lt;/script>
+    &lt;/head>
+    &lt;body>
+      My site!
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+        </section>
+        <section>
+          <h3>Adding JS to HTML: External</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+      &lt;script src="scripts.js">&lt;/script>
+    &lt;/head>
+    &lt;body>
+      My site!
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+          <p>scripts.js</p>
+          <pre><code contenteditable class="javascript">
+  alert("Hello World!");
+          </code></pre>
+          <p class="fragment">This is usually the best way to add JavaScript.</p>
+        </section>
+
+        <!-- Exercise-->
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It</h3>
+            <h4>Hello World</h4>
+            <ul>
+              <li>Create a new JavaScript file (a file that ends in .js)</li>
+              <li>Link it to your html file</li>
+              <li>Output "Hello World" in your JavaScript file</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <code>index.html</code>
+            <pre><code class ="html">
+    &lt;!DOCTYPE html>
+    &lt;html>
+      &lt;head>
+        &lt;title>Jane Doe's Site!&lt;/title>
+        &lt;link rel="stylesheet" href="style.css">
+        &lt;script src="scripts.js">&lt;/script>
+      &lt;/head>
+      &lt;body>
+        &lt;img class="photo" src="photo.png">
+        &lt;h1>Jane Doe&lt;/h1>
+        &lt;p>Hi! My name is Jane Doe.&lt;/p>
+      &lt;/body>
+    &lt;/html>
+            </code></pre>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <code>scripts.js</code>
+            <pre><code class ="javascript">
+    alert("Hello World!");
+            </code></pre>
+            or
+            <pre><code class ="javascript">
+    console.log("Hello World");
+            </code></pre>
+          </section>
+        </section>
+
         <!-- Data Types-->
         <section>
           <h2>Data Types</h2>
@@ -560,107 +659,18 @@
         </section>
 
         <section>
-          <h2>Adding JS to HTML</h2>
-          <p>Three main ways, just like CSS</p>
-        </section>
-
-        <section>
-          <h3>Adding JS to HTML: Inline</h3>
-          <pre><code contenteditable class="html">
-  &lt;html>
-    &lt;head>
-      &lt;title>My Site!&lt;/title>
-    &lt;/head>
-    &lt;body>
-      My site!
-      &lt;a href="#" onclick="alert('Hello World!');">click me&lt;/a>
-    &lt;/body>
-  &lt;/html>
-          </code></pre>
-          <p class="fragment">We'll talk more about this one later</p>
-        </section>
-        <section>
-          <h3>Adding JS to HTML: Embedded</h3>
-          <pre><code contenteditable class="html">
-  &lt;html>
-    &lt;head>
-      &lt;title>My Site!&lt;/title>
-      &lt;script>
-        alert("Hello World!");
-      &lt;/script>
-    &lt;/head>
-    &lt;body>
-      My site!
-    &lt;/body>
-  &lt;/html>
-          </code></pre>
-        </section>
-        <section>
-          <h3>Adding JS to HTML: External</h3>
-          <pre><code contenteditable class="html">
-  &lt;html>
-    &lt;head>
-      &lt;title>My Site!&lt;/title>
-      &lt;script src="scripts.js">&lt;/script>
-    &lt;/head>
-    &lt;body>
-      My site!
-    &lt;/body>
-  &lt;/html>
-          </code></pre>
-          <p>scripts.js</p>
-          <pre><code contenteditable class="javascript">
-  alert("Hello World!");
-          </code></pre>
-          <p class="fragment">This is usually the best way to add JavaScript.</p>
-        </section>
-
-        <!-- Exercise-->
-        <section data-state="activity">
-          <h3>Let's Develop It</h3>
-          <p>Create a new html file</p>
-          <pre><code class ="html">
-  &lt;!DOCTYPE html>
-  &lt;html>
-    &lt;head>
-      &lt;title>My Site!&lt;/title>
-    &lt;/head>
-    &lt;body>
-      My site!
-    &lt;/body>
-  &lt;/html>
-          </code></pre>
-        </section>
-
-        <section data-state="activity">
-          <h3>Let's Develop It</h3>
-          <p>Create a new javascript file (a file that ends in .js)</p>
-          <p>Link it to your html file</p>
-          <pre><code class ="html">
-  &lt;!DOCTYPE html>
-  &lt;html>
-    &lt;head>
-      &lt;title>My Site!&lt;/title>
-      &lt;script src="scripts.js">&lt;/script>
-    &lt;/head>
-    &lt;body>
-      My site!
-    &lt;/body>
-  &lt;/html>
-          </code></pre>
-        </section>
-
-        <section data-state="activity">
-          <h3>Let's Develop It</h3>
-          <h4>Lifetime supply calculator</h4>
-          <p>Ever wonder how much a lifetime supply of your favorite snack or drink is?</p>
-          <ul>
-            <li>Store your age in a variable</li>
-            <li>Store your maximum in a variable</li>
-            <li>Store an estimated amount per day in a variable</li>
-            <li>Calculate how many you would eat/drink for the rest of your life</li>
-            <li>Output the result in an alert like so: "You will need NN to last you until your old age of NN"</li>
-          </ul>
+          <section data-state="activity">
+            <h3>Let's Develop It</h3>
+            <h4>Lifetime supply calculator</h4>
+            <p>Ever wonder how much a lifetime supply of your favorite snack or drink is?</p>
+            <ul>
+              <li>Store your age in a variable</li>
+              <li>Store your maximum in a variable</li>
+              <li>Store an estimated amount per day in a variable</li>
+              <li>Calculate how many you would eat/drink for the rest of your life</li>
+              <li>Output the result in an alert like so: "You will need NN to last you until your old age of NN"</li>
+            </ul>
+          </section>
         </section>
 
         <!-- If statement-->
