@@ -1,7 +1,11 @@
 // My welcome message
 var isMyBirthday = true;
+var month = 3;
+var day = 4;
+var birthMonth = 3;
+var birthDay = 4;
 
-if(isMyBirthday) {
+if(month === birthMonth && day === birthDay) {
   alert("Today is my birthday!");
 } else {
   alert("Welcome to my site!")

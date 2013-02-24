@@ -2,8 +2,10 @@
 var today = new Date();
 var month = today.getMonth() + 1;
 var day = today.getDate();
+var birthMonth = 3;
+var birthDay = 4;
 
-if(month === 2 && day === 20) {
+if(month === birthMonth && day === birthDay) {
   alert("Today is my birthday!");
 } else if(month === 12) {
   alert("Happy holidays!")
