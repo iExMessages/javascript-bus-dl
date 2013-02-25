@@ -251,16 +251,16 @@
           <h3>The while loop</h3>
           <p>The while loop tells JS to repeat statements until a condition is true:</p>
           <pre><code contenteditable class = "javascript">
-      while (expression) {
-        // statements to repeat
-      }
+  while (expression) {
+    // statements to repeat
+  }
           </code></pre>
           <pre><code contenteditable class = "javascript">
-      var x = 0;
-      while (x < 5) {
-        console.log(x);
-        x++;
-      }
+  var x = 0;
+  while (x < 5) {
+    console.log(x);
+    x++;
+  }
           </code></pre>
           <div class = "fragment">
             Review: '++' means increment by 1!
@@ -286,49 +286,51 @@
           }
           </code></pre>
           <div class = "fragment">
-            Less danger of an infinite loop. All conditions are at the top!
+            Less danger of an infinite loop. <br/>All conditions are at the top!
           </div>
         </section>
 
         <!-- Arrays -->
         <section>
           <h3>Array</h3>
-          <p>An array is a data-type that holds an ordered list of values, of any type:</p>
+          <p>An array is a data-type that holds <br/>an ordered list of values of any type:</p>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-          var arrayName = [element0, element1, ...];
+  var arrayName = [element0, element1, ...];
             </code></pre>
           </div>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-var favoriteNumbers = [16, 27, 88];
-var luckyThings = ['Rainbows', 7, 'Horseshoes'];
+  var favoriteNumbers = [16, 27, 88];
+  var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
+                       'Blue', 'Indigo', 'Violet'];
+  var luckyThings = ['Rainbows', 7, 'Horseshoes'];
             </code></pre>
           </div>
           <div class = "fragment">
             The length property reports the size of the array:
             <pre><code contenteditable class = "javascript">
-          console.log(rainbowColors.length);
+  console.log(rainbowColors.length);
             </code></pre>
           </div>
         </section>
 
         <section>
-          <h3>Arrays -- returning values</h3>
+          <h3>Arrays: returning values</h3>
           <p class = "fragment">You can access items with "bracket notation".</p>
           <div class = "fragment">
             The number inside the brackets is called an "index"
             <pre><code contenteditable class = "javascript">
-          var arrayItem = arrayName[indexNum];
+  var arrayItem = arrayName[indexNum];
             </code></pre>
           </div>
           <div class = "fragment">
-            Nerds are weird, so we start counting at 0.
+            Arrays in JavaScript are <em>zero-indexed</em>, <br/>which means we start
+            counting from zero.
             <pre><code contenteditable class = "javascript">
-      var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-      var firstColor = rainbowColors[0];
-      var lastColor = rainbowColors[6];
+  var colors = ['Red', 'Green', 'Blue'];
+  var firstColor = rainbowColors[0]; // Red
+  var lastColor = rainbowColors[2];  // Blue
             </code></pre>
           </div>
         </section>
