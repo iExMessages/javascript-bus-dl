@@ -1,12 +1,14 @@
 // My welcome message
 var isMyBirthday = true;
-var month = 3;
+var month = 12;
 var day = 4;
 var birthMonth = 3;
 var birthDay = 4;
 
 if(month === birthMonth && day === birthDay) {
   alert("Today is my birthday!");
+} else if(month === 12) {
+  alert("Happy holidays!")
 } else {
   alert("Welcome to my site!")
 }

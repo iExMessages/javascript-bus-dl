@@ -964,6 +964,7 @@
               <li>Create a variable with your birth day (number)</li>
               <li>If the current day/month matches your birth day/month output a birthday message</li>
               <li>Otherwise, output a general message</li>
+              <li>Extra credit: Output a holiday message if the month is December</li>
             </ul>
           </section>
           <section>
@@ -971,8 +972,75 @@
             <img src="images/welcome-bday.png"/>
           </section>
           <section>
-            <h3>On other days</h3>
+            <h3>On regular days</h3>
             <img src="images/welcome-general.png"/>
+          </section>
+          <section>
+            <h3>In December</h3>
+            <img src="images/welcome-holiday.png"/>
+          </section>
+        </section>
+
+        <section>
+          <h3>Dates</h3>
+          <p>Get the current date and time</p>
+          <pre><code contenteditable class ="javascript">
+  var date = new Date();
+          </code></pre>
+          <p>Set a specific date and time using a string</p>
+          <pre><code contenteditable class ="javascript">
+  var adaLovelaceBday = new Date("December 10, 1815");
+  var dueDate = new Date("May 1, 2015 12:30");
+          </code></pre>
+        </section>
+        <section>
+          <h3>Dates</h3>
+          <p>Set a specific date and time using numbers</p>
+          <pre><code contenteditable class ="javascript">
+  var newYear = new Date(2015, 0, 1, 0, 0, 0);
+          </code></pre>
+          <ul style="font-size: 0.9em;">
+            <li><strong>year</strong> - 4-digit integer</li>
+            <li><strong>month</strong> - integer starting with 0 for Jan to 11 for Dec</li>
+            <li><strong>day</strong> - integer representing the day of the month (1-31)</li>
+            <li><strong>hour</strong> - integer representing the hour of the day (0-23)</li>
+            <li><strong>minute</strong> - integer representing the minutes (0-59) for time</li>
+            <li><strong>second</strong> - integer representing the seconds (0-59) for time</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Dates</h3>
+          <p>Get information about a date</p>
+          <pre><code contenteditable class ="javascript">
+  var date = new Date();
+  date.getFullYear(); // Year
+  date.getMonth();    // Month
+  date.getDate();     // Day
+  date.getHours();    // Hour
+  date.getMinutes();  // Minute
+  date.getSeconds();  // Second
+          </code></pre>
+          <p>See the <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date">Mozilla Developer Network</a>
+            for <br/>more information about dates</p>
+        </section>
+
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It!: Welcome message</h3>
+            <p>Modify your welcome message to automate <br/>the current month/day</p>
+            <ul>
+              <li>Create a variable with the current date</li>
+              <li>Set your current month variable using the month from the current date</li>
+              <li>Set your current day variable using the day from the current date</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Hints</h3>
+            <ul>
+              <li>You can get the current date using <code>new Date()</code></li>
+              <li>You can get the month from a date using <code>.getMonth()</code></li>
+              <li>You can get the day from a date using <code>.getDate()</code></li>
+            </ul>
           </section>
         </section>
 
