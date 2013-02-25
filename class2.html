@@ -394,79 +394,79 @@
           <h3>Objects</h3>
           <p>Objects are a data type that let us store a collection of properties and methods.</p>
           <pre><code contenteditable class = "javascript">
-          var objectName = {
-            propertyName: propertyValue,
-            propertyName: propertyValue,
-            ...
-          };
+  var objectName = {
+    propertyName: propertyValue,
+    propertyName: propertyValue,
+    ...
+  };
           </code></pre>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-      var charlie = {
-        age: 8,
-        name: "Charlie Brown",
-        likes: ["baseball", "The little red-haired girl"],
-        pet: "Snoopy"
-      };
+  var charlie = {
+    age: 8,
+    name: "Charlie Brown",
+    likes: ["baseball", "The little red-haired girl"],
+    pet: "Snoopy"
+  };
           </code></pre>
           </div>
         </section>
 
         <section>
-          <h3>Objects -- returning values</h3>
+          <h3>Objects: accessing values</h3>
           <p>Access values of "properties" using "dot notation":</p>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-      var charlie = {
-        age: 8,
-        name: "Charlie Brown",
-        likes: ["baseball", "The little red-haired girl"],
-        pet: "Snoopy"
-      };
+  var charlie = {
+    age: 8,
+    name: "Charlie Brown",
+    likes: ["baseball", "The little red-haired girl"],
+    pet: "Snoopy"
+  };
       </code></pre>
           </div>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-          var pet = charlie.pet;
+  var pet = charlie.pet;
             </code></pre>
           </div>
         </section>
 
         <section>
-          <h3>Objects -- returning values</h3>
+          <h3>Objects: accessing values</h3>
           <div class = "fragment">
             Or using "bracket notation" (like arrays):
             <pre><code contenteditable class = "javascript">
-          var name = charlie['name'];
+  var name = charlie['name'];
             </code></pre>
           </div>
           <div class = "fragment">
             Non-existent properties will return undefined:
             <pre><code contenteditable class = "javascript">
-          var gender = charlie.gender
+  var hometown = charlie.hometown;
             </code></pre>
           </div>
         </section>
 
         <section>
-          <h3>Objects -- changing values</h3>
+          <h3>Objects: changing values</h3>
           <p>Use dot or bracket notation with the assignment operator to change objects.</p>
           <div class = "fragment">
           Change existing properties:
           <pre><code contenteditable class = "javascript">
-          charlie.name = "Chuck";
+  charlie.name = "Chuck";
           </code></pre>
           </div>
           <div class = "fragment">
             Or add new properties:
             <pre><code contenteditable class = "javascript">
-          charlie.gender = "male";
+  charlie.hometown = "Peanuts";
             </code></pre>
           </div>
           <div class ="fragment">
           You can also delete properties:
           <pre><code contenteditable class = "javascript">
-          delete charlie.gender;
+  delete charlie.hometown;
           </code></pre>
           </div>
         </section>
@@ -476,12 +476,12 @@
           <p>Arrays can hold objects too!</p>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-          var peanuts = [
-            {name: "Charlie Brown",
-             pet: "Snoopy"},
-            {name: "Linus van Pelt",
-             pet: "Blue Blanket"}
-          ];
+  var peanuts = [
+    {name: "Charlie Brown",
+     pet: "Snoopy"},
+    {name: "Linus van Pelt",
+     pet: "Blue Blanket"}
+  ];
             </code></pre>
           </div>
           <div class = "fragment">
@@ -489,7 +489,8 @@
             <pre><code contenteditable class = "javascript">
   for (var i = 0; i < peanuts.length; i++) {
     var peanut = peanuts[i];
-    console.log(peanut.name + ' has a pet named ' + peanut.pet + '.');
+    console.log(peanut.name + ' has a pet named ' +
+                peanut.pet + '.');
   }
           </code></pre>
           </div>
@@ -499,36 +500,44 @@
           <h3>Objects in functions</h3>
           <p>You can pass an object into a function as a parameter</p>
           <pre><code contenteditable class = "javascript">
-        var peanut ={
-          name: "Charlie Brown",
-          pet: "Snoopy"
-          };
+  var peanut = {
+    name: "Charlie Brown",
+    pet: "Snoopy"
+  };
           </code></pre>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
   function describeCharacter(character){
-    console.log(character.name + ' has a pet named ' + character.pet + '.');
+    console.log(character.name + ' has a pet named ' +
+                character.pet + '.');
   }
             </code></pre>
           </div>
          <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-              describeCharacter(peanut);
+  describeCharacter(peanut);
             </code></pre>
           </div>
         </section>
 
         <!-- Exercise -->
-        <section>
-          <h3>Let's Develop It</h3>
-          <ul>
-            <li>Add another link that calls the function myFriends() onclick</li>
-            <li>Add a new function to the javascript myFriends</li>
-            <li>In the function, create an array of friends objects, with their names and hair colors</li>
-            <li>Use a for loop to go through each friend and describe them</li>
-            <li>Alert the results</li>
-            <li>Bonus -- make a separate functions that describe the friends</li>
-          </ul>
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It: My Connections</h3>
+            <p>Share your connections (friends, pets, etc.).</p>
+            <ul>
+              <li>Add a link that calls the function <code>myConnections</code> onclick</li>
+              <li>Add a <code>myConnections</code> javascript function</li>
+              <li>Create an array of connection objects, with their name, type (e.g. friend),
+                  and something they like.</li>
+              <li>Use a loop to go through each connection and describe them</li>
+              <li>Alert the results</li>
+              <li>Bonus: make a separate function that describes a connection</li>
+            </ul>
+          </section>
+          <section>
+            <img src="images/my-connections.png"/>
+          </section>
         </section>
 
         <!-- DOM -->
