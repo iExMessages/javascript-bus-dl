@@ -137,36 +137,54 @@
         <!-- Functions cont.-->
         <section>
           <h3>Variable Scope</h3>
-          <p class = "fragment">JavaScript have "function scope". They are visible in the function where they are defined</p>
-          <div class = "fragment">
-            A variable with "local" scope:
-         <pre><code contenteditable class ="javascript">
-  function addNumbers(num1, num2){
-    var result = num1 + num2;
-    return result; //Anything after this line won't be read
-  }
-  var sum  = addNumbers(5, 6);
-  console.log(result); //will return undefined because result only exists inside the addNumbers function
-          </code></pre>
-          </div>
+          <p>The context where a specific variable is valid</p>
+          <p>JavaScript has two scopes:</p>
+          <ul>
+            <li><strong>Local</strong> - available in the function where it is defined</li>
+            <li><strong>Global</strong> - available everywhere</li>
+          </ul>
         </section>
-
-        <!-- Functions cont.-->
         <section>
-          <h3>Variable Scope</h3>
-          <p class = "fragment">JavaScript have "function scope". They are visible in the function where they are defined</p>
-          <div class = "fragment">
-            A variable with "global" scope:
-         <pre><code contenteditable class ="javascript">
-  var result;
-  function addNumbers(num1, num2){
-    result = num1 + num2;
-    return result; //Anything after this line won't be read
+          <h3>Variable Scope: Local</h3>
+          <p>Available in the function where it is defined</p>
+          <pre><code contenteditable class ="javascript">
+  function addNumbers(num1, num2) {
+    var result = num1 + num2; // local
+    return result;
   }
+
   var sum  = addNumbers(5, 6);
-  console.log(result); //will return 11 because the variable was defined outside the function
+  console.log(result); // undefined because it is outside of scope
           </code></pre>
-          </div>
+        </section>
+        <section>
+          <h3>Variable Scope: Global</h3>
+          <p>Available everywhere</p>
+          <pre><code contenteditable class ="javascript">
+  var result; // global
+
+  function addNumbers(num1, num2) {
+    result = num1 + num2;
+    return result;
+  }
+
+  var sum  = addNumbers(5, 6);
+  console.log(result); // outputs 11 because it is global
+          </code></pre>
+        </section>
+        <section>
+          <h3>Variable Scope: Best Practice</h3>
+          <p>Declare your variables at the top of their scope<br/> to avoid problems.</p>
+          <pre><code contenteditable class ="javascript">
+  function myFunction() {
+    // declare your variables at the top
+    var i, j;
+    var number = 10;
+    var string = "some string";
+
+    // code goes here
+  }
+          </code></pre>
         </section>
 
         <!-- Exercise-->
