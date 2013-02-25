@@ -201,6 +201,40 @@
           </ul>
         </section>
 
+        <section>
+          <h3>Adding JS to HTML: Inline</h3>
+          <pre><code contenteditable class="html">
+  &lt;html>
+    &lt;head>
+      &lt;title>My Site!&lt;/title>
+    &lt;/head>
+    &lt;body>
+      My site!
+      &lt;a href="#" onclick="alert('Hello World!'); return false;">
+        click me
+      &lt;/a>
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+          <p class="fragment">Runs JavaScript when the event (click) occurs.</p>
+          <p class="fragment">We'll talk about other events later.</p>
+          <p class="fragment">Returning false prevents the default action.</p>
+        </section>
+
+        <!-- Exercise-->
+        <section data-state="activity">
+          <h3>Let's Develop It: Inline Events</h3>
+          <p>Let's share information about another favorite activity</p>
+          <ul>
+            <li>Add a link to your html page</li>
+            <li>Set the <code>href</code> attribute to <code>#</code></li>
+            <li>Add an onclick event to the link that calls <code>calculateActivity</code>
+                with arguments for a different activity.</li>
+            <li>Include <code>return false</code> if you want to prevent
+                default behavior</li>
+          </ul>
+        </section>
+
         <!-- Loops-->
         <section>
           <h3>Loops</h3>
