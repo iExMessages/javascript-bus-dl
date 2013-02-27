@@ -564,21 +564,185 @@
         </section>
 
         <section>
-          <h3>DOM Interaction</h3>
-          <p class = "fragment">On every webpage, the document object gives us ways of accessing and changing the DOM.</p>
-          <p class = "fragment left-align">Every DOM "node" has properties. They are connected like a family tree.</p>
-          <p class = "fragment left-align"> Parent (parentNode), children (childNodes, firstChild), siblings (prevSibling, nextSibling)</p>
-          <div class = "fragment">
+          <p>In the DOM, web pages are like trees</p>
+          <pre><code contenteditable class = "html">  &lt;!DOCTYPE html>
+  &lt;html>
+    &lt;head>
+      &lt;title>Title&lt;/title>
+    &lt;/head>
+    &lt;body>
+      &lt;h1>My Page&lt;/h1>
+      &lt;p>Some Text.&lt;/p>
+    &lt;/body>
+  &lt;/html></code></pre>
+          <img class="fragment" src="images/dom-tree.png" height="300"/>
+        </section>
+        <section>
+          <p>In the DOM, web pages are like trees</p>
+          <img src="images/document-console.png"/>
+        </section>
+        <section>
+          <h3>DOM: document</h3>
+          <p>Entry point for the web page's content. <br/>The root of the tree.</p>
+          <img src="images/dom-tree-document.png"/>
+        </section>
+        <section>
+          <h3>DOM: element</h3>
+          <p>HTML nodes in the tree.</p>
+          <img src="images/dom-tree-elements.png"/>
+        </section>
+        <section>
+          <h3>DOM: text</h3>
+          <p>Text nodes in the tree.</p>
+          <img src="images/dom-tree-text.png"/>
+        </section>
+
+        <section>
+          <section>
+            <h3>DOM traversal: body</h3>
+            <p>Get the body of your html</p>
             <pre><code contenteditable class = "javascript">
-  var bodyNode = document.body; // &lt;body>
-  var htmlNode = document.body.parentNode; // &lt;html>
-  for (var i = 0; i < document.body.childNodes.length; i++) {
-    var childNode = document.body.childNodes[i];
-    //could be &lt;p>, &lt;h1>, etc.
-    //any html element
+  document.body;
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>DOM traversal: body</h3>
+            <p>Try it!</p>
+            <img src="images/document-body.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>DOM traversal: parent</h3>
+            <p>Get the parent of a node.</p>
+            <pre><code contenteditable class = "javascript">
+  document.body.parentNode;
+            </code></pre>
+            <div class="fragment">
+              <p>Go up the tree</p>
+              <img src="images/tree-parentnode.png"/>
+            </div>
+          </section>
+          <section data-state="activity">
+            <h3>DOM traversal: parent</h3>
+            <p>Try it!</p>
+            <img src="images/parent-node.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>DOM traversal: children</h3>
+            <p>Get the children of a node.</p>
+            <pre><code contenteditable class = "javascript">
+  var children = document.body.childNodes; // Array of child nodes
+
+  for(var i = 0; i < children.length; i++) {
+    var child = children[i]; // A child node
+  }
+            </code></pre>
+            <div class="fragment">
+              <p>Go down the tree</p>
+              <img src="images/tree-childnodes.png" width="400"/>
+            </div>
+          </section>
+          <section data-state="activity">
+            <h3>DOM traversal: children</h3>
+            <p>Try it!</p>
+            <img src="images/child-nodes.png"/>
+            <p class="fragment">Sometimes whitespace leads to extra text nodes</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>DOM traversal: children</h3>
+          <p>Get just the first child.</p>
+          <pre><code contenteditable class = "javascript">
+  document.body.firstChild;
+          </code></pre>
+        </section>
+
+        <section>
+          <section>
+            <h3>DOM traversal: siblings</h3>
+            <p>Get the siblings of a node.</p>
+            <pre><code contenteditable class = "javascript">
+  var node = document.body.firstChild;
+  var next = node.nextSibling;
+  var previous = next.previousSibling;
+            </code></pre>
+            <div class="fragment">
+              <p>Go across a branch of the tree</p>
+              <img src="images/tree-siblings.png" height="300"/>
+            </div>
+          </section>
+          <section data-state="activity">
+            <h3>DOM traversal: siblings</h3>
+            <p>Try it!</p>
+            <img src="images/siblings.png"/>
+            <p class="fragment">Sometimes whitespace leads to extra text nodes</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>DOM searching: id</h3>
+          <p>Get an element by its id</p>
+          <pre><code contenteditable class = "html">
+  &lt;div id="my-data">
+    the data
+  &lt;/div>
+          </code></pre>
+          <pre><code contenteditable class = "javascript">
+  document.getElementById('my-data');
+          </code></pre>
+          <p class="fragment">Ids are unique, so there should only be one</p>
+        </section>
+
+        <section>
+          <h3>DOM searching: tag name</h3>
+          <p>Get elements by their tag name</p>
+          <pre><code contenteditable class = "html">
+  &lt;ul>
+    &lt;li>item 1&lt;/>
+    &lt;li>item 2&lt;/>
+    &lt;li>item 3&lt;/>
+  &lt;/ul>
+          </code></pre>
+          <pre><code contenteditable class = "javascript">
+  // Array of elements
+  var items = document.getElementsByTagName('li');
+
+  for(var i = 0; i < items; i++) {
+    var item = items[i];
   }
           </code></pre>
-          </div>
+        </section>
+
+        <section>
+          <h3>DOM searching: tag name</h3>
+          <p>Limit the scope of the search</p>
+          <pre><code contenteditable class = "html">
+  &lt;div id="important">
+    &lt;p>some text&lt;/p>
+  &lt;/div>
+  &lt;div>
+    &lt;p>other text&lt;/p>
+  &lt;/div>
+          </code></pre>
+          <pre><code contenteditable class = "javascript">
+  // All p elements
+  var allParagraphs = document.getElementsByTagName('p');
+
+  var scope = document.getElementById('important');
+  // p elements that are children of the scope element
+  var paragraphs = scope.getElementsByTagName('p');
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>DOM: window</h3>
+          <p>???</p>
         </section>
 
         <section>
