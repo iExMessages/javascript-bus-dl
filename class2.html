@@ -354,7 +354,7 @@
           <div class = "fragment">
          You can also use the push method:
             <pre><code contenteditable class = "javascript">
-          awesomeAnimals.push('Ocelots');
+  awesomeAnimals.push('Ocelots');
             </code></pre>
           </div>
         </section>
@@ -397,7 +397,8 @@
         <!-- Objects-->
         <section>
           <h3>Objects</h3>
-          <p>Objects are a data type that let us store a collection of properties and methods.</p>
+          <p>A data type that stores a collection of properties.</p>
+          <p>A property is an association between a name and value.</p>
           <pre><code contenteditable class = "javascript">
   var objectName = {
     propertyName: propertyValue,
@@ -482,10 +483,14 @@
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
   var peanuts = [
-    {name: "Charlie Brown",
-     pet: "Snoopy"},
-    {name: "Linus van Pelt",
-     pet: "Blue Blanket"}
+    {
+      name: "Charlie Brown",
+      pet: "Snoopy"
+    },
+    {
+      name: "Linus van Pelt",
+      pet: "Blue Blanket"
+    }
   ];
             </code></pre>
           </div>
@@ -578,10 +583,6 @@
           <img class="fragment" src="images/dom-tree.png" height="300"/>
         </section>
         <section>
-          <p>In the DOM, web pages are like trees</p>
-          <img src="images/document-console.png"/>
-        </section>
-        <section>
           <h3>DOM: document</h3>
           <p>Entry point for the web page's content. <br/>The root of the tree.</p>
           <img src="images/dom-tree-document.png"/>
@@ -596,6 +597,11 @@
           <p>Text nodes in the tree.</p>
           <img src="images/dom-tree-text.png"/>
         </section>
+        <section data-state="activity">
+          <h3>DOM: document</h3>
+          <p><a href="class2/dom-trial.html">Take a look</a> at the tree.</p>
+          <img src="images/document-console.png"/>
+        </section>
 
         <section>
           <section>
@@ -607,7 +613,7 @@
           </section>
           <section data-state="activity">
             <h3>DOM traversal: body</h3>
-            <p>Try it!</p>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
             <img src="images/document-body.png"/>
           </section>
         </section>
@@ -626,7 +632,7 @@
           </section>
           <section data-state="activity">
             <h3>DOM traversal: parent</h3>
-            <p>Try it!</p>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
             <img src="images/parent-node.png"/>
           </section>
         </section>
@@ -649,7 +655,7 @@
           </section>
           <section data-state="activity">
             <h3>DOM traversal: children</h3>
-            <p>Try it!</p>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
             <img src="images/child-nodes.png"/>
             <p class="fragment">Sometimes whitespace leads to extra text nodes</p>
           </section>
@@ -679,58 +685,77 @@
           </section>
           <section data-state="activity">
             <h3>DOM traversal: siblings</h3>
-            <p>Try it!</p>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
             <img src="images/siblings.png"/>
-            <p class="fragment">Sometimes whitespace leads to extra text nodes</p>
           </section>
         </section>
 
         <section>
-          <h3>DOM searching: id</h3>
-          <p>Get an element by its id</p>
-          <pre><code contenteditable class = "html">
-  &lt;div id="my-data">
-    the data
-  &lt;/div>
-          </code></pre>
-          <pre><code contenteditable class = "javascript">
-  document.getElementById('my-data');
-          </code></pre>
-          <p class="fragment">Ids are unique, so there should only be one</p>
+          <h3>DOM searching</h3>
+          <p class="left-align blue">Finding every element on the page by traversing the tree is time consuming!</p>
+          <p class="fragment left-align">The document object also provides methods for finding DOM nodes without going one by one.</p>
         </section>
 
         <section>
-          <h3>DOM searching: tag name</h3>
-          <p>Get elements by their tag name</p>
-          <pre><code contenteditable class = "html">
-  &lt;ul>
-    &lt;li>item 1&lt;/>
-    &lt;li>item 2&lt;/>
-    &lt;li>item 3&lt;/>
-  &lt;/ul>
-          </code></pre>
-          <pre><code contenteditable class = "javascript">
-  // Array of elements
-  var items = document.getElementsByTagName('li');
+          <section>
+            <h3>DOM searching: id</h3>
+            <p>Get an element by its id</p>
+            <pre><code contenteditable class = "html">
+    &lt;div id="my-data">
+      the data
+    &lt;/div>
+            </code></pre>
+            <pre><code contenteditable class = "javascript">
+    document.getElementById('my-data');
+            </code></pre>
+            <p class="fragment">Ids are unique, so there should only be one</p>
+          </section>
+          <section data-state="activity">
+            <h3>DOM searching: id</h3>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
+            <img src="images/search-id.png"/>
+          </section>
+        </section>
 
-  for(var i = 0; i < items; i++) {
-    var item = items[i];
-  }
-          </code></pre>
+        <section>
+          <section>
+            <h3>DOM searching: tag name</h3>
+            <p>Get elements by their tag name</p>
+            <pre><code contenteditable class = "html">
+    &lt;ul>
+      &lt;li>item 1&lt;/li>
+      &lt;li>item 2&lt;/li>
+      &lt;li>item 3&lt;/li>
+    &lt;/ul>
+            </code></pre>
+            <pre><code contenteditable class = "javascript">
+    // Array of elements
+    var items = document.getElementsByTagName('li');
+
+    for(var i = 0; i < items.length; i++) {
+      var item = items[i];
+    }
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>DOM searching: id</h3>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
+            <img src="images/search-tags.png"/>
+          </section>
         </section>
 
         <section>
           <h3>DOM searching: tag name</h3>
           <p>Limit the scope of the search</p>
-          <pre><code contenteditable class = "html">
+          <pre><code contenteditable class="html">
   &lt;div id="important">
-    &lt;p>some text&lt;/p>
+    &lt;p>important text&lt;/p>
   &lt;/div>
   &lt;div>
     &lt;p>other text&lt;/p>
   &lt;/div>
           </code></pre>
-          <pre><code contenteditable class = "javascript">
+          <pre><code contenteditable class="javascript">
   // All p elements
   var allParagraphs = document.getElementsByTagName('p');
 
@@ -741,140 +766,140 @@
         </section>
 
         <section>
+          <section>
+            <h3>Dom Node: attributes</h3>
+            <p>You can get and set node attributes</p>
+
+            <pre><code contenteditable class="html">
+  &lt;a id="gdi-link" href="http://girldevelopit.com">
+    Girl Develop It
+  &lt;/a>
+            </code></pre>
+            <pre><code contenteditable class="javascript">
+  var link = document.getElementById('gdi-link');
+  link.getAttribute('src'); // get attribute
+
+  var pghLink = 'http://girldevelopit.com/chapters/pittsburgh';
+  link.setAttribute('src', pghLink); //set attribute
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>Dom Node: attributes</h3>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
+            <img src="images/dom-attributes.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Dom Node: innerHTML</h3>
+            <p>Each node has an innerHTML property that can be used to get and
+               set the content of the node.</p>
+
+            <pre><code contenteditable class="html">
+  &lt;div id="important">
+    &lt;p>important text&lt;/p>
+  &lt;/div>
+            </code></pre>
+            <pre><code contenteditable class="javascript">
+  var important = document.getElementById('important');
+  important.innerHTML; // get content
+
+  var newContent = '&lt;strong>IMPORTANT TEXT!!!&lt;/strong>';
+  important.innerHTML = newContent; //set content
+
+  important.innerHTML += 'more text!'; // add to content
+            </code></pre>
+            <p class="fragment">You can also add to the content.</p>
+          </section>
+          <section data-state="activity">
+            <h3>Dom Node: innerHTML</h3>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
+            <img src="images/inner-html.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Dom: creating nodes</h3>
+            <p>The document object can create new nodes.</p>
+
+            <pre><code contenteditable class="javascript">
+  document.createElement(tagName);
+  document.createTextNode(text);
+  document.appendChild();
+            </code></pre>
+            <div class = "fragment">
+            <pre><code contenteditable class = "javascript">
+  var newParagraph = document.createElement('p');
+  var paragraphText = document.createTextNode('My new text!');
+
+  newParagraph.appendChild(paragraphText);
+
+  document.body.appendChild(newParagraph);
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>Dom Node: creating nodes</h3>
+            <p><a href="class2/dom-trial.html">Try it!</a></p>
+            <img src="images/dom-create-nodes.png"/>
+          </section>
+        </section>
+
+        <section>
           <h3>DOM: window</h3>
-          <p>???</p>
-        </section>
-
-        <section>
-          <h3>DOM Interaction: Easier</h3>
-          <p class = "fragment blue">Finding every element on the page by siblings and children is time consuming!</p>
-          <p class = "fragment">The document object also provides methods for finding DOM nodes without going one by one</p>
-          <div class = "fragment">
-            Find element by id
-            <pre><code contenteditable class = "html">
-&lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
-            </code></pre>
-            <pre><code contenteditable class = "javascript">
-var img = document.getElementById('mainpicture');
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>DOM Interaction: Easier</h3>
-          <div class = "fragment">
-            Find element by tag name (p, li, div, etc.)
-            <pre><code contenteditable class = "html">
-          &lt;li class="peanut">Charlie Brown&lt;/li>
-          &lt;li class="peanut">Linus van Pelt&lt;/li>
-            </code></pre>
+          <p>Represents the window</p>
           <pre><code contenteditable class = "javascript">
-      var listItems = document.getElementsByTagName('li');
-      for (var i =0; i < listItems.length; i++) {
-        var listItem = listItems[i];
-      }
+  window.document;
+
+  // How far has the user scrolled
+  window.scrollX;
+  window.scrollY;
+
+  // How big is the window
+  window.innerWidth;
+  window.innerHeight;
           </code></pre>
-          </div>
         </section>
 
-        <!-- Methods-->
         <section>
-          <h3>Methods</h3>
-          <ul>
-            <li class = "fragment">Methods are special functions</li>
-            <li class = "fragment">The affect or return a value for a specific object</li>
-            <li class = "fragment">Used with dot notation</li>
-          </ul>
-          <div class = "fragment">
-            Previously seen example:
-            <pre><code contenteditable class = "javascript">
-  var candy = ['Gummy Bears', 'Sour Patch Kids', 'Swedish Fish'];
-  var length = candy.length;
-            </code></pre>
-          </div>
-        </section>
-
-        <!-- Attributes-->
-        <section>
-          <h3>DOM Nodes -- Attributes</h3>
-          <p>We can use node methods to set and retrieve attributes</p>
-          <div class = "fragment">
-            getAttribute/setAttribute
-            <pre><code contenteditable class = "javascript">
- var img = document.getElementById('mainpicture');
- img.getAttribute('src');
- img.setAttribute('src', 'http://girldevelopit.com/assets/pink-logo.png');
-            </code></pre>
-
-            <pre><code contenteditable class = "javascript">
- var img = document.getElementById('mainpicture');
- img.getAttribute('class');
- img.setAttribute('class', 'picture-class');
-            </code></pre>
-          </div>
-        </section>
-
-        <!-- Inner HTML-->
-        <section>
-          <h3>DOM innerHTML</h3>
-          <p>Each DOM node has an innerHTML property:</p>
-        <div class = "fragment">
-          <pre><code contenteditable class = "javascript">
-        document.body.innerHTML;
+          <h3>DOM: window</h3>
+          <p class="left-align">We don't have access to the DOM until the window loads.</p>
+          <p class="left-align fragment">Immediately running JS that depends on the DOM leads to problems.</p>
+          <pre class="fragment"><code contenteditable class = "javascript">
+  window.onload = function() {
+    // Put JS that runs on page load here
+  }
           </code></pre>
-        </div>
-        <div class = "fragment">
-        You can set innerHTML yourself to change the contents of the node:
-          <pre><code contenteditable class = "javascript">
-document.body.innerHTML = '&lt;p>I changed the whole page!&lt;/p>';
-          </code></pre>
-        </div>
-        <div class = "fragment">
-        You can also just add to the innerHTML instead of replace everything:
-          <pre><code contenteditable class = "javascript">
-document.body.innerHTML += "...just adding this bit at the end of the page.";
-          </code></pre>
-        </div>
-        </section>
-
-        <!-- Create element and append child-->
-        <section>
-          <h3>DOM Modifying</h3>
-          <p>The document object can create new nodes:</p>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-              document.createElement(tagName);
-              document.createTextNode(text);
-              document.appendChild();
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-var newImg = document.createElement('img');
-newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
-document.body.appendChild(newImg);
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-var newParagraph = document.createElement('p');
-var paragraphText = document.createTextNode('New Paragraph!');
-newParagraph.appendChild(paragraphText);
-document.body.appendChild(newParagraph);
-      </code></pre>
-          </div>
-
         </section>
 
         <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <ul>
-            <li>Put it all together</li>
-            <li>Modify your existing three functions to add new elements to the screen instead of fire an alert</li>
-            <li>Keep in mind how to find an element, how to append an element, and how to change the inner html of an element</li>
-            <li>There are lots of possible solutions! Be creative!</li>
-          </ul>
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It</h3>
+            <ul>
+              <li>Put it all together</li>
+              <li>Modify your existing code to add new elements to the
+                screen instead of firing an alert or outputting to console.log</li>
+              <li>You can change the HTML too.</li>
+              <li>Keep in mind how to find an element, how to append an element, and how to change the inner html of an element</li>
+              <li>There are lots of possible solutions! Be creative!</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Hints</h3>
+            <ul>
+              <li>It can be easier to find a DOM element if it has an id.</li>
+              <li>The welcome message code needs to wait for the window to load
+                  before accessing the DOM.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example</h3>
+            <p>Are you done or really stuck?</p>
+            <p>Check out <a href="class2/05-dom/index.html">our example</a>.</p>
+            <p>Keep in mind that this is one of many possible solutions.</p>
+          </section>
         </section>
         <!-- -->
         <section>
