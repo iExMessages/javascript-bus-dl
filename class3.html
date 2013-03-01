@@ -261,8 +261,8 @@
         <section>
           <section>
             <h3>get and set attributes</h3>
-            <p>We use the <code>attr</code> method as a <em>getter</em> and
-               a <em>setter</em></p>
+            <p>We use the <a href="http://api.jquery.com/attr/"><code>attr</code></a>
+              method as a <em>getter</em> and a <em>setter</em></p>
             <div class="fragment">
               <pre><code contenteditable class = "html">
   &lt;a id="gdi-link" href="http://girldevelopit.com">
@@ -291,9 +291,39 @@
 
         <section>
           <section>
+            <h3>get and set html</h3>
+            <p>We use the <a href="http://api.jquery.com/html/"><code>html</code></a>
+              method to <br/>get and set an element's HTML</p>
+            <div class="fragment">
+              <pre><code contenteditable class = "html">
+  &lt;div id="my-data">the data&lt;/div>
+              </code></pre>
+              <p>Get html</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").html();
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p>Set html</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").html('different data!'); // Text
+
+  $("$my-data").html('&lt;strong>Strong Data!&lt;/strong>'); // HTML
+              </code></pre>
+            </div>
+          </section>
+          <section data-state="activity">
             <h3>get and set styles</h3>
-            <p>We use the <code>css</code> method as a <em>getter</em> and
-               a <em>setter</em></p>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+            <img src="images/jquery-html.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>get and set html</h3>
+            <p>We use the <a href="http://api.jquery.com/css/"><code>css</code></a>
+              method as a <em>getter</em> and a <em>setter</em></p>
             <div class="fragment">
               <pre><code contenteditable class = "html">
   &lt;div id="styled" styles="color: red;">styled text!&lt;/div>
@@ -321,32 +351,6 @@
             <p><a href="class3/dom-trial.html">Try it!</a></p>
             <img src="images/jquery-css.png"/>
           </section>
-        </section>
-
-        <!-- Attributes and css-->
-        <section>
-          <h3>Updating attributes and css</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "html">
-  &lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            Attribute get and set
-            <pre><code contenteditable class = "javascript">
-  var img = $('#mainpicture');
-  img.attr('src');
-  img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            CSS property get and set
-            <pre><code contenteditable class = "javascript">
-  var img = $('#mainpicture');
-  img.css('width');
-  img.css('width', '200px');
-            </code></pre>
-          </div>
         </section>
 
         <!-- html values-->
