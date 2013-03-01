@@ -139,30 +139,69 @@
           </code></pre>
         </section>
 
-        <!-- Selectors-->
         <section>
-          <h3>jQuery Selectors</h3>
-          <p>Remember <span class = "green">document.getElementById()</span> and <span class = "green">documet.getElementsByTagName()</span>? </p>
-          <p class = "fragment"> jQuery selectors let you get elements by: </p>
-          <ul>
-            <li class = "fragment">Element name (div, p)
-            <pre><code contenteditable class = "javascript">
-      var divs = $("div"); // All divs on page
-            </code></pre>
-            </li>
-            <li class = "fragment">ID name (#mainpicture, #results)
-            <pre><code contenteditable class = "javascript">
-var img = $("#mainpicture"); //img with id mainpicture
-            </code></pre>
-            </li>
-            <li class = "fragment">Class name (.result, .picture)
-            <pre><code contenteditable class = "javascript">
-var images = $(".picture"); //All images with class picture
-            </code></pre>
-            </li>
-          </ul>
+          <h3>jQuery Basics</h3>
+          <p>Select some elements and do something with them.</p>
         </section>
 
+        <section>
+          <h3>jQuery Selectors</h3>
+          <p class="left-align">Before we used things like <code>document.getElementById()</code>
+             and <code>document.getElementsByTagName()</code></p>
+          <br/>
+          <p class="fragment left-align">In jQuery, we find elements using <code class="blue">$()</code></p>
+          <p class="fragment left-align">In jQuery, we find elements using CSS selectors</p>
+          <p class="fragment left-align"><code>$()</code> is an alias for
+            <code>jQuery()</code></p>
+        </section>
+
+        <section>
+          <section>
+            <h3>jQuery Selectors: id</h3>
+            <p>Find elements by id using <code>#</code></p>
+            <pre><code contenteditable class = "javascript">
+  $("#important");
+  $("#my-data");
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>jQuery Selectors: id</h3>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+            <img src="images/jquery-id.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>jQuery Selectors: element</h3>
+            <p>Find elements by element name</p>
+            <pre><code contenteditable class = "javascript">
+  $("li");
+  $("a");
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>jQuery Selectors: element</h3>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+            <img src="images/jquery-element.png"/>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>jQuery Selectors: class</h3>
+            <p>Find elements by class name using <code>.</code></p>
+            <pre><code contenteditable class = "javascript">
+  $(".header");
+  $(".other");
+            </code></pre>
+          </section>
+          <section data-state="activity">
+            <h3>jQuery Selectors: element</h3>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+            <img src="images/jquery-element.png"/>
+          </section>
+        </section>
 
         <!-- Actions-->
         <section>
