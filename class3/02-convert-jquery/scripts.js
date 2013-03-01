@@ -11,6 +11,7 @@ window.onload = function() {
     welcomeMessage.text("Today is my birthday!");
   } else if(month === 12) {
     welcomeMessage.text("Happy holidays!");
+    welcomeMessage.css('color', 'green');
   } else {
     welcomeMessage.text("Welcome to my site!");
   }
@@ -26,7 +27,7 @@ function calculateActivity(activity, countPerMonth) {
   var monthsPerYear = 12;
   var countPerYear = countPerMonth * monthsPerYear;
 
-  var message = "One of my favorite activities is " + activity + ". ";
+  var message = "One of my favorite activities is <strong>" + activity + "</strong>. ";
   message += "I do it " + countPerMonth + " times per month. ";
   message += "That's " + countPerYear + " times a year!";
 
