@@ -17,7 +17,7 @@ window.onload = function() {
 
   // Information about one of my favorite activities.
   calculateActivity("yoga", 4);
-}
+};
 
 
 

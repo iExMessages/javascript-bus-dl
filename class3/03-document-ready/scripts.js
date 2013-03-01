@@ -1,4 +1,4 @@
-// Wait for window to finish loading, so we have access to the dom
+// Wait for document to finish loading, so we have access to the dom
 $(document).ready(function() {
   // My welcome message
   var today = new Date();

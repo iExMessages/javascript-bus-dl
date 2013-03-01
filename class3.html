@@ -455,10 +455,10 @@
         </section>
 
         <!-- Exercise-->
-        <section>
+        <section data-state="activity">
           <section>
             <h3>Let's Develop It!</h3>
-            <h4>Conver to jQuery</h4>
+            <h4>Convert to jQuery</h4>
             <ul>
               <li>Convert last week's DOM interactions into jQuery</li>
               <li>Bonus: add some style changes too</li>
@@ -467,8 +467,8 @@
           <section>
             <h3>Hints</h3>
             <ul>
-              <li>Use <code>$()</code> to find elements.</li>
-              <li>Look at the <a href="http://api.jquery.com/">jQuery API</a>
+              <li>Use <code>$()</code> with css selectors to find elements.</li>
+              <li>Look at the slides and/or the <a href="http://api.jquery.com/">jQuery API</a>
                   to figure out how methods work</li>
             </ul>
           </section>
@@ -479,24 +479,36 @@
           </section>
         </section>
 
-        <!-- Document Ready-->
         <section>
           <h3>Document Ready</h3>
-          <div class = "left-align">
-          <p>Webpages take time to load</p>
-          <p class = "fragment">Almost always, you don't want the JavaScript to be called until the page is loaded</p>
-          </div>
-          <div class = "fragment">
+          <p>The DOM takes time to load</p>
+          <p class="left-align fragment">Immediately running JS that depends on the DOM leads to problems</p>
+          <div class="left-align fragment">
             Document ready is a method called when the page is loaded
             <pre><code contenteditable class = "javascript">
-        $(document).ready(function(){
-
-        });
+  $(document).ready(function(){
+    // Code that depends on the DOM
+  });
             </code></pre>
           </div>
           <div class = "fragment left-align">
             <span class = "yellow">Note:</span> The function() inside is an "anonymous function". It has no name, but still performs like a function.
           </div>
+        </section>
+
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It!</h3>
+            <h4>Document Ready</h4>
+            <ul>
+              <li>Replace <code>window.onload</code> with <code>$(document).ready</code></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example</h3>
+            <p>Are you done or really stuck?</p>
+            <p>Check out <a href="class3/03-document-ready/index.html">our example</a>.</p>
+          </section>
         </section>
 
         <!-- HTML Events-->
