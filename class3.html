@@ -321,6 +321,49 @@
 
         <section>
           <section>
+            <h3>append and prepend</h3>
+            <p>We use the <a href="http://api.jquery.com/append/"><code>append</code></a>
+               and <a href="http://api.jquery.com/prepend/"><code>prepend</code></a>
+               methods to <br/>add to an element's HTML</p>
+            <div class="fragment">
+              <pre><code contenteditable class = "html">
+  &lt;div id="my-data">the data&lt;/div>
+              </code></pre>
+              <p>Append - add to the end</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").append('back');
+  $("#my-data").append('&lt;strong>strong back&lt;/strong>');
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p>Prepend - add to the beginning</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").append('front');
+  $("#my-data").append('&lt;strong>strong front&lt;/strong>');
+              </code></pre>
+            </div>
+          </section>
+          <section data-state="activity">
+            <h3>append and prepend</h3>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+            <img src="images/jquery-append-prepend.png"/>
+          </section>
+        </section>
+
+        <section>
+          <h3>Creating new elements</h3>
+          <div class = "fragment">
+            <pre><code contenteditable class = "javascript">
+    var newDiv = $('&lt;div>&lt;/div>');
+            </code></pre>
+          </div>
+          <div class = "fragment">
+            Seriously. That's it!
+          </div>
+        </section>
+
+        <section>
+          <section>
             <h3>get and set styles</h3>
             <p>We use the <a href="http://api.jquery.com/css/"><code>css</code></a>
               method as a <em>getter</em> and a <em>setter</em></p>
@@ -351,43 +394,6 @@
             <p><a href="class3/dom-trial.html">Try it!</a></p>
             <img src="images/jquery-css.png"/>
           </section>
-        </section>
-
-
-        <!-- Append and prepend-->
-        <section>
-          <h3>Append and Prepend</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "html">
-  &lt;div class = "results">Boo!&lt;/div>
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            Append html
-            <pre><code contenteditable class = "javascript">
-    var div = $('#results');
-    div.append('Additional html');
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            Prepend html
-            <pre><code contenteditable class = "javascript">
-    var div = $('#results');
-    div.prepend('Additional html (on top)');
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>Creating new element</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-    var newDiv = $('&lt;div>&lt;/div>');
-            </code></pre>
-          </div>
-          <div class = "fragment">
-            Seriously. That's it!
-          </div>
         </section>
 
         <!-- Exercise-->
