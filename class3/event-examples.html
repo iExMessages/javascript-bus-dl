@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+  $('.box').on({
+    click: function() {
+      $(this).css('background-color', 'green')
+    },
+    mouseenter: function() {
+      $(this).css('background-color', 'purple')
+    },
+    mouseleave: function(){
+      $(this).css('background-color', 'orange')
+    }
+  });
+});
+    </script>
+    <style>
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: solid 5px black;
+}
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    </div>
+  </body>
+</html>

@@ -529,13 +529,13 @@
       <pre><code contenteditable class = "javascript">
   $(selector).mouseenter(function(){
     //code when the mouse enters
-  })
+  });
       </code></pre>
           <div class = "fragment">
       <pre><code contenteditable class = "javascript">
   $('.box').mouseenter(function(){
     $(this).css('background-color', 'purple')
-  })
+  });
       </code></pre>
           </div>
           <div class = "fragment left-align">
@@ -548,23 +548,23 @@
           <h3>Handling event examples</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-      $('.box').mouseenter(function(){
-        $(this).css('background-color', 'purple')
-      })
+  $('.box').mouseenter(function(){
+    $(this).css('background-color', 'purple')
+  });
             </code></pre>
           </div>
           <div class = "fragment">
           <pre><code contenteditable class = "javascript">
-      $('.box').mouseleave(function(){
-        $(this).css('background-color', 'orange')
-      })
+  $('.box').mouseleave(function(){
+    $(this).css('background-color', 'orange')
+  });
           </code></pre>
           </div>
           <div class = "fragment">
           <pre><code contenteditable class = "javascript">
-      $('.box').click(function(){
-        $(this).css('background-color', 'green')
-      })
+  $('.box').click(function(){
+    $(this).css('background-color', 'green')
+  });
           </code></pre>
           </div>
         </section>
@@ -574,19 +574,20 @@
           <p>If you want multiple events to happen on the same element, you should use the on method</p>
           <div class = "fragment">
           <pre><code contenteditable class = "javascript">
-      $('.box').on({
-        click: function() {
-          $(this).css('background-color', 'green')
-        },
-        mouseenter: function() {
-          $(this).css('background-color', 'purple')
-        },
-        mouseleave: function(){
-          $(this).css('background-color', 'orange')
-        }
-      });
+  $('.box').on({
+    click: function() {
+      $(this).css('background-color', 'green')
+    },
+    mouseenter: function() {
+      $(this).css('background-color', 'purple')
+    },
+    mouseleave: function(){
+      $(this).css('background-color', 'orange')
+    }
+  });
           </code></pre>
           </div>
+          <a href="class3/event-examples.html" class="fragment">Try it!</a>
         </section>
 
         <!-- Exercise-->
@@ -734,6 +735,7 @@
 					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
 
 		</script>
 
