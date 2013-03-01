@@ -139,6 +139,41 @@
           </code></pre>
         </section>
 
+        <section data-state="activity">
+          <section>
+            <h3>Let's Develop It</h3>
+            <h4>Add jQuery</h4>
+            <ul>
+              <li>Link to the Google hosted jQuery</li>
+              <li>Put it before your JavaScript file</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <h4>Add jQuery</h4>
+            <pre><code class ="html">
+  &lt;head>
+    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    &lt;/script>
+    &lt;script src="scripts.js">&lt;/script>
+  &lt;/head>
+            </code></pre>
+            <p class="fragment">jQuery should go first because<br/> our code will
+              depend on it later.</p>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <code>scripts.js</code>
+            <pre><code class ="javascript">
+    alert("Hello World!");
+            </code></pre>
+            or
+            <pre><code class ="javascript">
+    console.log("Hello World");
+            </code></pre>
+          </section>
+        </section>
+
         <section>
           <h3>jQuery Basics</h3>
           <p>Select some elements and do something with them.</p>
@@ -321,6 +356,29 @@
 
         <section>
           <section>
+            <h3>get and set text</h3>
+            <p>We use the <a href="http://api.jquery.com/text/"><code>text</code></a>
+              method to <br/>get and set an element's text</p>
+            <div class="fragment">
+              <pre><code contenteditable class = "html">
+  &lt;div id="my-data">the data&lt;/div>
+              </code></pre>
+              <p>Get text</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").text();
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p>Set text</p>
+              <pre><code contenteditable class = "javascript">
+  $("#my-data").text('different data!'); // Text
+              </code></pre>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
             <h3>append and prepend</h3>
             <p>We use the <a href="http://api.jquery.com/append/"><code>append</code></a>
                and <a href="http://api.jquery.com/prepend/"><code>prepend</code></a>
@@ -354,7 +412,7 @@
           <h3>Creating new elements</h3>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-    var newDiv = $('&lt;div>&lt;/div>');
+  var newDiv = $('&lt;div>&lt;/div>');
             </code></pre>
           </div>
           <div class = "fragment">
@@ -398,9 +456,27 @@
 
         <!-- Exercise-->
         <section>
-          <h3>Let's Develop It!</h3>
-          <p>Try to convert last week's DOM interaction into jQuery.</p>
-          <p>Don't forget to include jQuery in your html head!</p>
+          <section>
+            <h3>Let's Develop It!</h3>
+            <h4>Conver to jQuery</h4>
+            <ul>
+              <li>Convert last week's DOM interactions into jQuery</li>
+              <li>Bonus: add some style changes too</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Hints</h3>
+            <ul>
+              <li>Use <code>$()</code> to find elements.</li>
+              <li>Look at the <a href="http://api.jquery.com/">jQuery API</a>
+                  to figure out how methods work</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example</h3>
+            <p>Are you done or really stuck?</p>
+            <p>Check out <a href="class3/02-convert-jquery/index.html">our example</a>.</p>
+          </section>
         </section>
 
         <!-- Document Ready-->
