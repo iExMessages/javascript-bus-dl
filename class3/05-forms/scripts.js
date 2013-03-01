@@ -19,13 +19,6 @@ $(document).ready(function() {
   // Information about one of my favorite activities.
   calculateActivity("yoga", 4);
 
-
-  // Bind click for activities
-  $("#myActivities").on("click", function() {
-    calculateActivity('drawing', 8);
-    return false;
-  });
-
   $("#activitiesForm").on("submit", function() {
     var name = $("#activityName").val();
     var frequency = $("#timesPerMonth").val();
@@ -39,11 +32,22 @@ $(document).ready(function() {
     return false;
   });
 
+  // Bind click for activities
+  $("#myActivities").on("click", function() {
+    calculateActivity('drawing', 8);
+    return false;
+  });
+
   // Bind click for favorite things
-  $("#favoriteThings").click(favoriteThings);
+  $("#favoriteThings").click(function() {
+    favoriteThings();
+    return false;
+  });
 
   // Bind click for my connections
-  $("#myConnections").click(myConnections);
+  $("#myConnections").click(function() {
+    myConnections
+  });
 
   $("#theButton").on({
     mouseenter: function() {
@@ -57,6 +61,7 @@ $(document).ready(function() {
     click: function() {
       $(this).css("background-color", "red");
       $(this).text("Noooo!");
+      return false;
     }
   });
 });

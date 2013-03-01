@@ -27,10 +27,15 @@ $(document).ready(function() {
   });
 
   // Bind click for favorite things
-  $("#favoriteThings").click(favoriteThings);
+  $("#favoriteThings").click(function() {
+    favoriteThings();
+    return false;
+  });
 
   // Bind click for my connections
-  $("#myConnections").click(myConnections);
+  $("#myConnections").click(function() {
+    myConnections
+  });
 
   $("#theButton").on({
     mouseenter: function() {
@@ -44,6 +49,7 @@ $(document).ready(function() {
     click: function() {
       $(this).css("background-color", "red");
       $(this).text("Noooo!");
+      return false;
     }
   });
 });

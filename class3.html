@@ -517,9 +517,18 @@
           <p>Events occur on a webpage via user interaction</p>
           <p class = "fragment">Common Events:</p>
           <ul>
-            <li class="fragment"><strong>click</strong> - mouse clicks an element</li>
-            <li class= "fragment"><strong>mouseenter</strong> - mouse goes inside an element</li>
-            <li class = "fragment"><strong>mouseleave</strong> - mouse leaves an element</li>
+            <li class="fragment">
+              <a href="http://api.jquery.com/click/"><code>click</code></a> -
+              mouse clicks an element
+            </li>
+            <li class= "fragment">
+              <a href="http://api.jquery.com/mouseenter/"><code>mouseenter</code></a> -
+              mouse goes inside an element
+            </li>
+            <li class = "fragment">
+              <a href="http://api.jquery.com/mouseleave/"><code>mouseleave</code></a> -
+              mouse leaves an element
+            </li>
             <li class = "fragment"><a href = "http://api.jquery.com/category/events/" target = "_blank">Other events</a></li>
           </ul>
         </section>
@@ -571,7 +580,8 @@
 
         <section>
           <h3>Combining events</h3>
-          <p>If you want multiple events to happen on the same element, you should use the on method</p>
+          <p>If you want multiple events to happen on the same element, you
+             should use the <a href="http://api.jquery.com/on/"><code>on</code></a> method</p>
           <div class = "fragment">
           <pre><code contenteditable class = "javascript">
   $('.box').on({
@@ -591,15 +601,29 @@
         </section>
 
         <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <ul>
-            <li>Add a div to your html that is 100px by 200px</li>
-            <li>Bind events to the div in your javascript file</li>
-            <li>Don't forget to surround your events with document ready</li>
-            <li>Try to change size, color, or event the html inside the div</li>
-            <li>Bonus: change all the onclick events to jQuery click events</li>
-          </ul>
+         <section data-state="activity">
+          <section>
+            <h3>Let's Develop It!</h3>
+            <h4>Events</h4>
+            <ul>
+              <li>Add a div to your html</li>
+              <li>Bind events to your div in the javascript file</li>
+              <li>Change the div when events trigger</li>
+              <li>Bonus: change all the onclick events to jQuery click events</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Hints</h3>
+            <ul>
+              <li>Remember to put things inside <code>document.ready</code></li>
+              <li>Some suggested things to change on event: color, text, size</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Example</h3>
+            <p>Are you done or really stuck?</p>
+            <p>Check out <a href="class3/04-events/index.html">our example</a>.</p>
+          </section>
         </section>
 
         <!-- HTML forms-->
