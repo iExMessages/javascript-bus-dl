@@ -159,6 +159,15 @@
           <section>
             <h3>jQuery Selectors: id</h3>
             <p>Find elements by id using <code>#</code></p>
+            <pre><code contenteditable class = "html">
+  &lt;div id="my-data">
+    the data
+  &lt;/div>
+
+  &lt;div id="important">
+    &lt;p>important text&lt;/p>
+  &lt;/div>
+            </code></pre>
             <pre><code contenteditable class = "javascript">
   $("#important");
   $("#my-data");
@@ -175,6 +184,17 @@
           <section>
             <h3>jQuery Selectors: element</h3>
             <p>Find elements by element name</p>
+            <pre><code contenteditable class = "html">
+  &lt;ul>
+    &lt;li>item 1&lt;/li>
+    &lt;li>item 2&lt;/li>
+    &lt;li>item 3&lt;/li>
+  &lt;/ul>
+
+  &lt;a id="gdi-link" href="http://girldevelopit.com">
+    Girl Develop It
+  &lt;/a>
+            </code></pre>
             <pre><code contenteditable class = "javascript">
   $("li");
   $("a");
@@ -191,16 +211,35 @@
           <section>
             <h3>jQuery Selectors: class</h3>
             <p>Find elements by class name using <code>.</code></p>
+            <pre><code contenteditable class = "html">
+  &lt;h1 class="header">My Page.&lt;/h1>
+
+  &lt;div class="other">
+    &lt;p>other text&lt;/p>
+  &lt;/div>
+            </code></pre>
             <pre><code contenteditable class = "javascript">
   $(".header");
   $(".other");
             </code></pre>
           </section>
           <section data-state="activity">
-            <h3>jQuery Selectors: element</h3>
+            <h3>jQuery Selectors: class</h3>
             <p><a href="class3/dom-trial.html">Try it!</a></p>
-            <img src="images/jquery-element.png"/>
+            <img src="images/jquery-class.png"/>
           </section>
+        </section>
+
+        <section>
+          <h3>jQuery Selectors</h3>
+          <p>jQuery supports most CSS3 selectors.</p>
+          <pre class="fragment"><code contenteditable class = "javascript">
+  $("ul li");
+  $(".other p");
+            </code></pre>
+          <p class="fragment">See
+            <a href="http://api.jquery.com/category/selectors/">the documentation</a>
+          for a full list</p>
         </section>
 
         <!-- Actions-->
