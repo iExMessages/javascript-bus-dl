@@ -674,7 +674,7 @@
         <!-- JavaScript and HTML Forms-->
         <section>
           <h3>Values from Forms</h3>
-          <p>You can use JavaScript to get values from a form</p>
+          <p>You can use <a href="http://api.jquery.com/val/">val</a> to get values from a form</p>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
     $('#name').val();
@@ -697,12 +697,13 @@
           <p>jQuery has an event for form submission</p>
           <div class = "fragment">
             <pre><code contenteditable class = "javascript">
-      $('#about-me').submit(function(event){
-            //code to execute after submission
-            return false;
-        });
+  $('#about-me').submit(function(event){
+    //code to execute on submission
+    return false;
+  });
             </code></pre>
-            <span class = "yellow">"return false"</span> to prevent the form trying to submit to a server.
+            <span class = "yellow">"return false"</span> to prevent the form trying
+              <br/> to submit to a server.
           </div>
         </section>
 
@@ -722,6 +723,8 @@
               <li>Put a text input in the form to get the name of the activity</li>
               <li>Put a text input in the form to get the times a month you do
                   the activity</li>
+              <li>Use <code>return false;</code> to prevent the form from
+                  submitting normally</li>
             </ul>
           </section>
           <section>
