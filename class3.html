@@ -454,6 +454,30 @@
           </section>
         </section>
 
+        <section>
+          <section>
+            <h3>chaining</h3>
+            <p>Many jQuery methods return a jQuery object, <br/>so you can call
+               additional methods <br/>without pausing for a semicolon.</p>
+            <div class="fragment">
+              <pre><code contenteditable class = "html">
+  &lt;div id="styled" styles="color: red;">styled text!&lt;/div>
+              </code></pre>
+              <p>Separately</p>
+              <pre><code contenteditable class = "javascript">
+  $("#styled").css('color');
+  $("#styled").append('extra text!');
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p>Chained</p>
+              <pre><code contenteditable class = "javascript">
+  $("#styled").css('color').append('extra text!');
+              </code></pre>
+            </div>
+          </section>
+        </section>
+
         <!-- Exercise-->
         <section data-state="activity">
           <section>
