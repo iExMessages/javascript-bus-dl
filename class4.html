@@ -60,11 +60,73 @@
 
         <section>
           <h3>Warning</h3>
-          <div style ="font-size=1.2em" class = "yellow">
-            The following few slides have lots of acronyms and jargon.
-          </div>
-          <div>On behalf of developers everywhere, we apologize</div>
+          <p class="blue left-align">
+            Today's topics are a little more advanced.
+          </p>
+          <br/>
+          <p class="left-align fragment">We want to give you a taste of other awesome
+            things you can do with JavaScript.</p>
+          <br/>
+          <p class="left-align fragment">Please ask questions!</p>
         </section>
+
+        <!-- What is AJAX-->
+        <section>
+          <h3>What is AJAX?</h3>
+          <ul>
+            <li class = "fragment"><strong>A</strong>synchronous <strong>J</strong>avaScript <strong>a</strong>nd <strong>X</strong>ML</li>
+            <li class="fragment">A group of client-side web development techniques used to create
+                asynchronous web applications</li>
+            <li class="fragment">Makes requests to the server asynchronously
+              (without reloading the page)</li>
+            <li class="fragment">Receives and works with data from the server</li>
+            <li class="fragment">Sends and receives data in JSON, XML, HTML, text</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Why use AJAX?</h3>
+          <ul>
+            <li class="fragment">Preven unnecessary page reloads</li>
+            <li class="fragment">Speed</li>
+            <li class="fragment">Interactivity</li>
+            <li class="fragment">Usability</li>
+          </ul>
+        </section>
+
+        <section data-state="activity">
+          <h3>AJAX Example: Autocomplete</h3>
+          <p>Autocomplete from <a href="http://www.amazon.com/">amazon.com</a></p>
+          <ul>
+            <li class="fragment">Go to <a href="http://www.amazon.com/">amazon.com</a></li>
+            <li class="fragment">Open the developer tools and go to the
+              <strong>network</strong> tab.</li>
+            <li class="fragment">Click the clear button (circle with a line through it).</li>
+            <li class="fragment">Start typing a query into the search box (do not submit by clicking enter)</li>
+            <li class="fragment">Notice the new entries and click one.</li>
+            <li class="fragment">Take a look at the headers to see your query.</li>
+            <li class="fragment">Take a look at the response to see what comes back.</li>
+          </ul>
+        </section>
+
+        <!-- What is AJAX-->
+        <section>
+          <h3>What is AJAX?</h3>
+          <ul>
+            <li class = "fragment"><span class = "yellow">A</span>synchronous <span class = "yellow">J</span>avaScript <span class = "yellow">a</span>nd <span class = "yellow">X</span>ML</li>
+            <li class = "fragment">Method to communicate to a server or API</li>
+            <li class = "fragment">Asynchronous means:
+              <ul>
+                <li class = "fragment">I ask Twitter for all the tweets ever!</li>
+                <li class = "fragment">That will take a while</li>
+                <li class = "fragment">My <span class = "green">whole website</span> could be <span class = "green">locked up</span> while I wait!</li>
+                <li class = "fragment">Or, my call can be <span class = "blue">'asynchronous'</span> and my website will just <span class = "blue">listen for Twitter's response</span> with one ear, but go about <span class = "blue">normal business until the response arrives</span>.
+              </ul>
+            </li>
+            <li class = "fragment">Requests and results can be in JavaScript or XML</li>
+          </ul>
+        </section>
+
         <!-- What is an API-->
         <section>
           <h3>What is an API?</h3>
@@ -84,24 +146,6 @@
                 <li class = "fragment">Twitter's mobile app and the Twitter API</li>
                 <li class = "fragment">Hootsuite's mobile app and the Twitter API</li>
             </li>
-          </ul>
-        </section>
-
-        <!-- What is AJAX-->
-        <section>
-          <h3>What is AJAX?</h3>
-          <ul>
-            <li class = "fragment"><span class = "yellow">A</span>synchronous <span class = "yellow">J</span>avaScript <span class = "yellow">a</span>nd <span class = "yellow">X</span>ML</li>
-            <li class = "fragment">Method to communicate to a server or API</li>
-            <li class = "fragment">Asynchronous means:
-              <ul>
-                <li class = "fragment">I ask Twitter for all the tweets ever!</li>
-                <li class = "fragment">That will take a while</li>
-                <li class = "fragment">My <span class = "green">whole website</span> could be <span class = "green">locked up</span> while I wait!</li>
-                <li class = "fragment">Or, my call can be <span class = "blue">'asynchronous'</span> and my website will just <span class = "blue">listen for Twitter's response</span> with one ear, but go about <span class = "blue">normal business until the response arrives</span>.
-              </ul>
-            </li>
-            <li class = "fragment">Requests and results can be in JavaScript or XML</li>
           </ul>
         </section>
 
@@ -127,6 +171,7 @@
           <h3>Where do I learn about an API?</h3>
           <p>All (good) APIs have documentation</p>
           <ul>
+            <li>jQuery (<a href = "http://api.jquery.com/" target = "_blank">http://api.jquery.com/</a>)</li>
             <li>Facebook (<a href = "https://developers.facebook.com/" target = "_blank">https://developers.facebook.com/</a>)</li>
             <li>Twitter (<a href = "https://dev.twitter.com/" target = "_blank">https://dev.twitter.com/</a>)</li>
             <li>Meetup (<a href = "http://www.meetup.com/meetup_api/" target = "_blank">http://www.meetup.com/meetup_api/</a>)</li>
