@@ -307,6 +307,31 @@
           for a full list</p>
         </section>
 
+        <section>
+          <h3>jQuery Selectors: Filters</h3>
+          <p>Sometimes a selection has more than you need.</p>
+          <p><a href="http://api.jquery.com/category/traversing/filtering/">Filter methods</a>
+           help refine your selection.</p>
+          <pre class="fragment"><code contenteditable class = "javascript">
+  $("div").has("p");
+  $("li").first();
+  $("p").eq(2);
+  $("div").not("#important");
+            </code></pre>
+        </section>
+
+        <section>
+          <h3>saving jQuery selections</h3>
+          <p>If you've made a selection you might want to use again, you can save
+            it in a variable.</p>
+          <p class="fragment">This is a good idea for performance.</p>
+          <pre class="fragment"><code contenteditable class = "javascript">
+  $important = $("#important");
+            </code></pre>
+          <p class="fragment">The convention is to start the variable name with
+            a $ to indicate it contains a jQuery object.</p>
+        </section>
+
         <!-- Actions-->
         <section>
           <h3>jQuery Actions</h3>
