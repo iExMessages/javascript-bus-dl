@@ -282,7 +282,7 @@
 
          <section>
           <h3>The while loop</h3>
-          <p>The while loop tells JS to repeat statements while a condition is true:</p>
+          <p>The while loop tells JS to repeat statements <br/>while a condition is true:</p>
           <pre><code contenteditable class = "javascript">
   while (expression) {
     // statements to repeat
@@ -298,6 +298,16 @@
           <div class = "fragment">
             Review: '++' means increment by 1!
           </div>
+        </section>
+        <section>
+          <h3>The while loop</h3>
+          <pre><code contenteditable class = "javascript">
+  var x = 0;
+  while (x < 5) {
+    console.log(x);
+    x++;
+  }
+          </code></pre>
           <div class = "fragment">
             <div class = "yellow">Danger!!</div>
             <p>What happens if we forget x++;?</p>
@@ -418,6 +428,12 @@
               <li>Use a for loop to generate a sentence about your favorite things:
                   "My favorite things are XX, YY, ZZ"</li>
               <li>Output the sentence</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It: Favorite Things</h3>
+            <p>Output a list of your favorite things.</p>
+            <ul>
               <li>Bonus: add an 'and' in before the last item:
                   <br/>"My favorite things are XX, YY, and ZZ"</li>
             </ul>
@@ -527,8 +543,7 @@
           <h3>Arrays of Objects</h3>
           <p>Arrays can hold objects too!</p>
           <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-  var peanuts = [
+            <pre><code contenteditable class = "javascript">  var peanuts = [
     {
       name: "Charlie Brown",
       pet: "Snoopy"
@@ -537,18 +552,15 @@
       name: "Linus van Pelt",
       pet: "Blue Blanket"
     }
-  ];
-            </code></pre>
+  ];</code></pre>
           </div>
           <div class = "fragment">
             That means we can use a for loop!
-            <pre><code contenteditable class = "javascript">
-  for (var i = 0; i < peanuts.length; i++) {
+            <pre><code contenteditable class = "javascript">  for (var i = 0; i < peanuts.length; i++) {
     var peanut = peanuts[i];
     console.log(peanut.name + ' has a pet named ' +
                 peanut.pet + '.');
-  }
-          </code></pre>
+  }</code></pre>
           </div>
         </section>
 
@@ -588,6 +600,12 @@
                   and something they like.</li>
               <li>Use a loop to go through each connection and describe them</li>
               <li>Alert the results</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It: My Connections</h3>
+            <p>Share your connections (friends, pets, etc.).</p>
+            <ul>
               <li>Bonus: make a separate function that describes a connection</li>
             </ul>
           </section>
