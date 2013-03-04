@@ -709,14 +709,12 @@
             <p>How many times do you do something in a year?</p>
             <ul>
               <li>Store one of your favorite activities in a variable</li>
-              <li>Store the number of times you do the activity per month in a
-                  variable</li>
-              <li>Store the number of months in a year in a variable</li>
+              <li>Store the times you do it per month in a variable</li>
+              <li>Store the months in a year in a variable</li>
               <li>Calculate how many times you do the activity per year using
                   math operations</li>
               <li>Output the result in one alert that includes: the activity,
-                  how many times you do it a month, and how many times you do it
-                  a year</li>
+                  times you do it a month, and times you do it a year</li>
             </ul>
           </section>
           <section>
@@ -808,6 +806,10 @@
   10 === "10" // false
           </code></pre>
           </div>
+        </section>
+        <section>
+          <h3>Comparison: Equal</h3>
+          <p>Returns true if the values are equal</p>
           <p class = "fragment green"> Don't confuse = (assign a value) <br/>with == or === (compare a value)</p>
         </section>
 
@@ -991,15 +993,21 @@
         <!-- Exercise-->
         <section data-state="activity">
           <section>
-            <h3>Let's Develop It!: Welcome message</h3>
-            <p>Output a special welcome message on your birthday</p>
+            <h3>Let's Develop It!: Welcome</h3>
+            <p>Output a welcome message</p>
             <ul>
-              <li>Create a variable with the current month (number)</li>
-              <li>Create a variable with the current day (number)</li>
-              <li>Create a variable with your birth month (number)</li>
-              <li>Create a variable with your birth day (number)</li>
+              <li>Set a variable with the current month (number)</li>
+              <li>Set a variable with the current day (number)</li>
+              <li>Set a variable with your birth month (number)</li>
+              <li>Set a variable with your birth day (number)</li>
               <li>If the current day/month matches your birth day/month output a birthday message</li>
               <li>Otherwise, output a general message</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It!: Welcome</h3>
+            <p>Output a welcome message</p>
+            <ul>
               <li>Extra credit: Output a holiday message if the month is December</li>
             </ul>
           </section>
@@ -1041,12 +1049,12 @@
   var newYear = new Date(2015, 0, 1, 0, 0, 0);
           </code></pre>
           <ul style="font-size: 0.9em;">
-            <li><strong>year</strong> - 4-digit integer</li>
-            <li><strong>month</strong> - integer starting with 0 for Jan to 11 for Dec</li>
-            <li><strong>day</strong> - integer representing the day of the month (1-31)</li>
-            <li><strong>hour</strong> - integer representing the hour of the day (0-23)</li>
-            <li><strong>minute</strong> - integer representing the minutes (0-59) for time</li>
-            <li><strong>second</strong> - integer representing the seconds (0-59) for time</li>
+            <li><strong>year</strong> - 4-digits</li>
+            <li><strong>month</strong> - starting with 0 for Jan to 11 for Dec</li>
+            <li><strong>day</strong> - the day of the month (1-31)</li>
+            <li><strong>hour</strong> - the hour of the day (0-23)</li>
+            <li><strong>minute</strong> - the minutes (0-59) for time</li>
+            <li><strong>second</strong> - the seconds (0-59) for time</li>
           </ul>
         </section>
         <section>
