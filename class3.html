@@ -541,6 +541,33 @@
           </section>
         </section>
 
+        <section>
+          <section>
+            <h3>each</h3>
+            <p>jQuery's <a href="http://api.jquery.com/each/">each</a> method
+              makes it easy to iterate through elements.</p>
+            <div class="fragment">
+              <pre><code contenteditable class = "html">
+  &lt;ul>
+    &lt;li>item 1&lt;/li>
+    &lt;li>item 2&lt;/li>
+    &lt;li>item 3&lt;/li>
+  &lt;/ul>
+              </code></pre>
+            <div class="fragment">
+              <pre><code contenteditable class = "javascript">
+  $("li").each(function(index, element) {
+    $(element).text("This is item #" + index);
+  });
+              </code></pre>
+            </div>
+          </section>
+          <section data-state="activity">
+            <h3>each</h3>
+            <p><a href="class3/dom-trial.html">Try it!</a></p>
+          </section>
+        </section>
+
         <!-- Exercise-->
         <section data-state="activity">
           <section>
