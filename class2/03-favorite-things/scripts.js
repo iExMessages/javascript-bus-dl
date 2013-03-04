@@ -38,7 +38,7 @@ function favoriteThings() {
       result += favorites[i] + ", ";
     } else {
       // last word in the array
-      result += "and " + favorites[i] +  "."
+      result += "and " + favorites[i] +  ".";
     }
   }
 

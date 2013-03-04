@@ -47,7 +47,7 @@ $(document).ready(function() {
 
   // Bind click for my connections
   $("#myConnections").click(function() {
-    myConnections
+    myConnections();
   });
 
   $("#theButton").on({
@@ -93,7 +93,7 @@ function getMeetups() {
       console.log("Error", data);
     }
   });
-};
+}
 
 // Outputs information about an activity and its frequency.
 function calculateActivity(activity, countPerMonth) {
@@ -124,7 +124,7 @@ function favoriteThings() {
       result += favorites[i] + ", ";
     } else {
       // last word in the array
-      result += "and " + favorites[i] +  "."
+      result += "and " + favorites[i] +  ".";
     }
   }
 
@@ -132,7 +132,7 @@ function favoriteThings() {
   var container = $("#favorites");
 
   // Create a new paragraph with the message text
-  var paragraph = $("<p>" + result + "</p>")
+  var paragraph = $("<p>" + result + "</p>");
 
   // Add the paragraph to the container
   container.append(paragraph);
@@ -159,7 +159,7 @@ function myConnections() {
       type: "corgi",
       likes: "bouncing"
     }
-  ]
+  ];
 
   // The div that contains the connections
   var container = $("#connections");
@@ -174,7 +174,7 @@ function myConnections() {
     var result = describeConnection(connections[i]);
 
     // Create a new list item for this connection
-    var listItem = $("<li>" + result + "</li>")
+    var listItem = $("<li>" + result + "</li>");
 
     // Add the list item to the list
     list.append(listItem);
@@ -186,5 +186,5 @@ function myConnections() {
 // Returns a sentence describing the connection
 function describeConnection(connection) {
   return "My " + connection.type + " " + connection.name + " likes " +
-         connection.likes + ". \n";;
+         connection.likes + ". \n";
 }

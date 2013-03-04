@@ -53,7 +53,7 @@ function favoriteThings() {
       result += favorites[i] + ", ";
     } else {
       // last word in the array
-      result += "and " + favorites[i] +  "."
+      result += "and " + favorites[i] +  ".";
     }
   }
 
@@ -89,7 +89,7 @@ function myConnections() {
       type: "corgi",
       likes: "bouncing"
     }
-  ]
+  ];
 
   // The div that contains the connections
   var container = document.getElementById("connections");
@@ -117,5 +117,5 @@ function myConnections() {
 // Returns a sentence describing the connection
 function describeConnection(connection) {
   return "My " + connection.type + " " + connection.name + " likes " +
-         connection.likes + ". \n";;
+         connection.likes + ". \n";
 }
