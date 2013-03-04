@@ -6,9 +6,9 @@ var day = today.getDate();
 if(month === 2 && day === 20) {
   console.log("Today is my birthday!");
 } else if(month === 12) {
-  console.log("Happy holidays!")
+  console.log("Happy holidays!");
 } else {
-  console.log("Welcome to my site!")
+  console.log("Welcome to my site!");
 }
 
 

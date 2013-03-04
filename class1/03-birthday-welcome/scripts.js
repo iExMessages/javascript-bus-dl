@@ -8,9 +8,9 @@ var birthDay = 4;
 if(month === birthMonth && day === birthDay) {
   alert("Today is my birthday!");
 } else if(month === 12) {
-  alert("Happy holidays!")
+  alert("Happy holidays!");
 } else {
-  alert("Welcome to my site!")
+  alert("Welcome to my site!");
 }
 
 // Information about one of my favorite activities.
