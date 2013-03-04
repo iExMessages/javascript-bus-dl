@@ -182,15 +182,10 @@
               depend on it later.</p>
           </section>
           <section>
-            <h3>Let's Develop It</h3>
-            <code>scripts.js</code>
-            <pre><code class ="javascript">
-    alert("Hello World!");
-            </code></pre>
-            or
-            <pre><code class ="javascript">
-    console.log("Hello World");
-            </code></pre>
+            <h3>Example</h3>
+            <p>Are you done or really stuck?</p>
+            <p>Check out <a href="class3/01-include-jquery/index.html">our example</a>.</p>
+            <p>Keep in mind that this is one of many possible solutions.</p>
           </section>
         </section>
 
@@ -475,13 +470,9 @@
             <p>We use the <a href="http://api.jquery.com/css/"><code>css</code></a>
               method as a <em>getter</em> and a <em>setter</em></p>
             <div class="fragment">
-              <pre><code contenteditable class = "html">
-  &lt;div id="styled" styles="color: red;">styled text!&lt;/div>
-              </code></pre>
+              <pre><code contenteditable class = "html">  &lt;div id="styled" styles="color: red;">styled text!&lt;/div></code></pre>
               <p>Get style</p>
-              <pre><code contenteditable class = "javascript">
-  $("#styled").css('color');
-              </code></pre>
+              <pre><code contenteditable class = "javascript">  $("#styled").css('color');</code></pre>
             </div>
             <div class="fragment">
               <p>Set style</p>
@@ -509,9 +500,7 @@
             <p>Many jQuery methods return a jQuery object, <br/>so you can call
                additional methods <br/>without pausing for a semicolon.</p>
             <div class="fragment">
-              <pre><code contenteditable class = "html">
-  &lt;div id="styled" styles="color: red;">styled text!&lt;/div>
-              </code></pre>
+              <pre><code contenteditable class = "html">  &lt;div id="styled" styles="color: red;">styled text!&lt;/div></code></pre>
               <p>Separately</p>
               <pre><code contenteditable class = "javascript">
   $("#styled").css('color');
@@ -730,19 +719,19 @@
           <p>HTML Forms allow users to enter information</p>
           <div class = "fragment">
             <pre><code contenteditable class = "html">
-&lt;form id ="about-me">
-  &lt;input type = "text" id = "name" placeholder = "Enter a name"/>
+&lt;form id="about-me">
+  &lt;input type="text" id="name" placeholder="Enter a name"/>
   &lt;label>Do you like popcorn&lt;/label>
-  Yes &lt;input type = "radio" name = "popcorn" val = "yes"/>
-  No &lt;input type = "radio" name = "popcorn" val = "no"/>
+  Yes &lt;input type= "radio" name="popcorn" val="yes"/>
+  No &lt;input type= "radio" name="popcorn" val="no"/>
   &lt;label>Favorite Dinosaur&lt;/label>
-  &lt;select id = "dinosaur">
-    &lt;option value = "t-rex">Tyrannosaurus Rex&lt;/option>
-    &lt;option value = "tri">Triceratops&lt;/option>
-    &lt;option value = "stego">Stegosaurus&lt;/option>
-    &lt;option value = "other">Other&lt;/option>
+  &lt;select id="dinosaur">
+    &lt;option value="t-rex">Tyrannosaurus Rex&lt;/option>
+    &lt;option value="tri">Triceratops&lt;/option>
+    &lt;option value="stego">Stegosaurus&lt;/option>
+    &lt;option value="other">Other&lt;/option>
   &lt;/select>
-  &lt;input type = "submit" value = "Go!" style = "padding: 7px; font-size:1em"/>
+  &lt;input type="submit" value="Go!" style="padding: 7px; font-size:1em;"/>
 &lt;/form>
             </code></pre>
           </div>
@@ -824,6 +813,19 @@
               <li>Use <code>return false;</code> to prevent the form from
                   submitting normally</li>
             </ul>
+          </section>
+          <section>
+            <h3>Hints</h3>
+            <p>Here's an example form.</p>
+            <pre><code contenteditable class="html">
+  &lt;form id="activitiesForm">
+    &lt;label for="activityName">Activity:&lt;/label>
+    &lt;input type="text" id="activityName" />
+    &lt;label for="timesPerMonth">Times a month:&lt;/label>
+    &lt;input type="text" id="timesPerMonth" />
+    &lt;input type="submit" value="Calculate" />
+  &lt;/form>
+            </code></pre>
           </section>
           <section>
             <h3>Example</h3>
