@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Class 0 ~ Javascript ~ Girl Develop IT</title>
+
+    <meta name="description" content="This is the official Girl Develop It Core Intro Javascript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+
+    The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="author" content="Girl Develop It">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h3>Download class materials</h3>
+          <p><a href="http://bit.ly/gdipgh-js-materials">http://bit.ly/gdipgh-js-materials</a></p>
+          <p>This includes the slides.</p>
+          <br/>
+          <h3>Online Slides</h3>
+          <p>You can also access the slides at <a href="http://bit.ly/gdipgh-js-slides">http://bit.ly/gdipgh-js-slides</a></p>
+        </section>
+
+        <!-- Opening slide -->
+        <section>
+          <img src = "images/gdi_logo_badge.png">
+          <h3>Beginning Javascript</h3>
+          <h4>HTML & CSS Review</h4>
+        </section>
+
+        <!-- Welcome-->
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class ="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-state="activity">
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p class = "blue">Tell us about yourself.</p>
+          <ul>
+            <li>Who are you?</li>
+            <li>What kind of HTML & CSS experience <br/>do you have?</li>
+            <li>What do you hope to get out of the class?</li>
+          </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Goals for the class</h3>
+          <ul>
+            <li><strong>Quick Review of HTML & CSS</strong></li>
+            <li>Intro to JavaScript</li>
+            <li>More JavaScript & the DOM</li>
+            <li>Intro to jQuery</li>
+            <li>Advanced topics & questions</li>
+          </ul>
+        </section>
+
+
+        <!-- Terms-->
+        <section>
+         <h3>Terms</h3>
+         <ul>
+           <li>
+            <div class = "green">Web design</div>
+            <div>The process of planning, structuring and creating a website</div>
+           </li>
+           <li>
+            <div class = "green">Web development</div>
+            <div>The process of programming dynamic web applications</div>
+           </li>
+         </ul>
+        </section>
+
+        <section>
+         <h3>Terms</h3>
+         <ul>
+           <li>
+            <div class = "green">Front end</div>
+            <div>The outwardly visible elements of a website or application.
+            <span class ="blue">(Javascript goes here!)</span></div>
+           </li>
+           <li>
+            <div class = "green">Back end</div>
+            <div>The inner workings and functionality of a website or application.</div>
+           </li>
+         </ul>
+        </section>
+
+        <section>
+          <h3>Anatomy of a website</h3>
+          <div class = "blue"> Your Content</div>
+          <div><span class = "blue">+ HTML: </span>Structure</div>
+          <div><span class = "blue">+ CSS: </span>Presentation</div>
+          <div><span class = "blue">+ JS: </span>Behavior & Interaction</div>
+          <div class = "blue">= Your Website</div>
+          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+        </section>
+
+        <section>
+          <h3>Anatomy of an HTML page</h3>
+          <pre><code class="html">
+  &lt;!DOCTYPE html>
+  &lt;html>
+    &lt;head>
+      &lt;title>Title of the page&lt;/title>
+      &lt;link rel="stylesheet" type="text/css"
+                             href="style.css"/>
+    &lt;/head>
+    &lt;body>
+      The page content here.
+    &lt;/body>
+  &lt;/html>
+          </code></pre>
+        </section>
+
+        <section>
+         <h3>Anatomy of an HTML element</h3>
+         <strong class="blue">Element</strong>
+          <ul>
+            <li>An individual component of HTML</li>
+            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Anatomy of an HTML element</h3>
+          <strong class="blue">Tag</strong>
+            <ul>
+              <li>Marks the beginning &amp; end of an element</li>
+              <li>Opening tag and Closing Tag
+              <li>Tags contain characters that indicate the tags purpose</li>
+              <pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+              <pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
+            </ul>
+        </section>
+        <!--anatomy of a tag -->
+        <section>
+          <h3>Tag Breakdown</h3>
+          <img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none; height: 500px;" />
+        </section>
+        <section>
+         <h3>Anatomy of an HTML element</h3>
+         <div class="fragment">
+           <strong class="blue">Container Element</strong>
+           <ul>
+             <li>An element that can contain other elements or
+             content</li>
+             <li>A paragraph (&lt;p>) contains text</li>
+            </ul>
+          </div>
+          <div class="fragment">
+            <strong class="blue">Stand Alone Element</strong>
+              <ul>
+                <li>An element that cannot contain anything else</li>
+                <li>
+  <pre><code class = "html">&lt;br/>
+  &lt;img/>
+  </code></pre>
+                </li>
+              </ul>
+            </strong>
+          </div>
+        </section>
+
+        <section>
+          <h3>Anatomy of an HTML element</h3>
+          <strong class="blue">Attribute</strong>
+          <ul>
+            <li>Provides additional information about the HTML element</li>
+            <li>Class, ID, language, style, identity, source</li>
+            <li>Placed inside an opening tag, before the right angle bracket.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Anatomy of an HTML element</h3>
+          <strong class="blue">Value</strong>
+          <ul>
+            <li>Value is the value assigned to a given attribute.</li>
+            <li>Values must be contained inside quotation marks.</li>
+            <li>
+  <pre><code class ="html">&lt;div id="copyright">&copy; GDI 2013&lt;/div>
+  &lt;img src="my_picture.jpg" />
+  &lt;a href="http://girldevelopit.com">GDI&lt;/a>
+  </code></pre>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>The CSS Rule</h3>
+          <img src="images/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
+        </section>
+        <section>
+          <h3>The CSS Rule</h3>
+<pre><code class="css">
+  selector {
+    property: value;
+  }
+
+</code></pre>
+          <div class = "left-align">
+            <p>A block of CSS code is a rule.</p>
+            <p>The rule starts with a selector.</p>
+            <p>It has sets of properties and values.</p>
+            <p>A property-value pair is a declaration.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Elements</h3>
+          <p>HTML elements on on your page</p>
+          <div class="fragment">
+            <p><strong>HTML</strong> adds elements</p>
+            <pre><code class="html">
+  &lt;div>Lorem ipsum &lt;span>Dolor.&lt;/span>&lt;/div>
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <p><strong>CSS</strong> selects elements by name</p>
+            <pre><code class="css">
+  div {
+    color: #000000;
+    font-size: 14px;
+  }
+  span {
+    color: #888888;
+    text-decoration: underline;
+  }
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>IDs</h3>
+          <p>Items that appear only once on your page</p>
+          <div class="fragment">
+            <p><strong>HTML</strong> adds ids using the <strong>id</strong> attribute</p>
+            <pre><code class="html">
+  &lt;div id="sidebar">
+    My sidebar goes here.
+  &lt;/div>
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <p><strong>CSS</strong> selects ids using <strong>#</strong></p>
+            <pre><code class="css">
+  #sidebar {
+    background-color: #ff0000;
+    width: 30%;
+  }
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>Classes</h3>
+          <p>Items that can appear many times on your page</p>
+          <div class="fragment">
+            <p><strong>HTML</strong> adds classes using the <strong>class</strong> attribute</p>
+            <pre><code class="html">
+  &lt;div class="quote">
+    Quote goes here.
+  &lt;/div>
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <p><strong>CSS</strong> selects ids using <strong>.</strong></p>
+            <pre><code class="css">
+  .quote {
+    color: #888888;
+    font-size: 18px;
+    font-weight: bold;
+  }
+            </code></pre>
+          </div>
+        </section>
+
+        <!-- -->
+        <section>
+          <h2>Questions?</h2>
+          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+            <div class ="clear"></div></div>
+        </section>
+        <section>
+          <a href="class1.html">Let's go to the next set of slides!</a>
+        </section>
+      </div>
+      <footer>
+        <div class="copyright">
+          Javascript ~ Girl Develop It ~
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme || 'gdipagano', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

@@ -61,10 +61,11 @@
         <section>
           <h3>Goals for the class</h3>
           <ul>
-            <li>Week 1: Intro to JavaScript</li>
-            <li>Week 2: More JavaScript & the DOM</li>
-            <li>Week 3: Intro to jQuery</li>
-            <li><strong>Week 4: AJAX and APIs</strong></li>
+            <li>Quick Review of HTML & CSS</li>
+            <li>Intro to JavaScript</li>
+            <li>More JavaScript & the DOM</li>
+            <li>Intro to jQuery</li>
+            <li><strong>Advanced topics & questions</strong></li>
           </ul>
         </section>
 
@@ -99,29 +100,6 @@
             <li class="fragment">Receives and works with data from the server</li>
             <li class="fragment">Sends and receives data in formats including: JSON, XML, HTML, text</li>
           </ul>
-        </section>
-
-        <!-- What is JSON-->
-        <section>
-          <h3>JSON</h3>
-          <ul>
-            <li class = "fragment"><strong>J</strong>ava<strong>S</strong>cript
-              <strong>O</strong>bject <strong>N</strong>otation</li>
-            <li class = "fragment">Data format</li>
-            <li class = "fragment">Frequently used for AJAX requests</li>
-            <li class = "fragment">Very similar to JavaScript objects</li>
-          </ul>
-          <pre class="fragment"><code contenteditable class = "javascript">  {
-    "firstName": "John",
-    "lastName": "Smith",
-    "age": 25,
-    "address": {
-        "streetAddress": "21 2nd Street",
-        "city": "New York",
-        "state": "NY",
-        "postalCode": 10021
-    }
-  }</code></pre>
         </section>
 
         <section>
@@ -159,20 +137,6 @@
             <li class="fragment">Interactivity</li>
             <li class="fragment">Usability</li>
             <li class="fragment">Include information from other sites</li>
-          </ul>
-        </section>
-
-        <section data-state="activity">
-          <h3>AJAX Examples: <br/>Data from Other Sites</h3>
-          <p>GDI class data from Meetup</p>
-          <ul>
-            <li class="fragment">Go to <a href="http://girldevelopit.com/classes">http://girldevelopit.com/classes</a></li>
-            <li class="fragment">Open the developer tools and go to the
-              <strong>network</strong> tab.</li>
-            <li class="fragment">Filter by "scripts".</li>
-            <li class="fragment">Find the entry from api.meetup.com.</li>
-            <li class="fragment">Take a look at the headers to see the request.</li>
-            <li class="fragment">Take a look at the response.</li>
           </ul>
         </section>
 
@@ -218,73 +182,6 @@
             <li>FourSquare (<a href = "https://developer.foursquare.com/">https://developer.foursquare.com/</a>)</li>
         </section>
 
-        <!-- Getting started!-->
-        <section>
-         <h3>Getting started!</h3>
-         <p>Get an API Key</p>
-         <p class = "fragment green">A what?</p>
-         <ul>
-           <li class = "fragment">Api Key or Developer Key is a way for an API to identify you</li>
-           <li class = "fragment">More secure for an API (Know who is using their API)</li>
-           <li class = "fragment">More secure for you - people can't pretend to be your website</li>
-          </ul>
-        </section>
-
-        <!-- Meetup-->
-        <section>
-          <h3>Meetup API</h3>
-          <p>We will be using the Meetup API</p>
-          <p>Get your <a href="http://www.meetup.com/meetup_api/key/">API key</a>.</p>
-          <img src = "images/meetup.png" />
-          <p><a href = "http://www.meetup.com/meetup_api/" target = "_blank">Documentation</a></p>
-        </section>
-
-        <section>
-          <h3>Meetup API</h3>
-          <p>We will be finding interesting Meetups near us</p>
-          <p><a href = "http://www.meetup.com/meetup_api/docs/2/open_events/" target = "_blank">Open Events</a></p>
-          <img src = "images/meetup_open.png"/>
-        </section>
-
-        <section>
-          <h3>Meetup API</h3>
-          <p>Try it in the meetup console</p>
-          <p><a href = "http://www.meetup.com/meetup_api/console/?path=/2/open_events" target = "_blank">Open Events Console</a></p>
-          <img src = "images/meetup_console.png"/>
-        </section>
-
-        <section>
-          <h3>Meetup API</h3>
-          <p>Try it in the meetup console</p>
-          <img src = "images/meetup_results.png"/>
-        </section>
-
-        <!-- jQuery Ajax-->
-        <section>
-          <h3>jQuery: Ajax</h3>
-          <p>jQuery's <a href="http://api.jquery.com/jQuery.ajax/">$.ajax</a> method helps you make ajax requests</p>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-  $.ajax({
-    url: 'http://site.com',
-    data: {
-      parameter: 'value',
-      parameter: 'value'
-    },
-    crossDomain: true,
-    dataType: 'jsonp',
-    type: "GET",
-    success: function (data) {
-      // code with data returned
-    },
-    error: function(data) {
-      // code with error returned
-    }
-  });
-            </code></pre>
-          </div>
-        </section>
-
         <section>
           <h3>jQuery Ajax</h3>
           <div class = "fragment">
@@ -301,151 +198,6 @@
             <li class = "fragment">Note the {}</li>
             <li class = "fragment"><span class = "blue">url</span> - first property, the url where you will send the AJAX request</li>
           </ul>
-        </section>
-
-        <section>
-          <h3>jQuery Ajax</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">  ...
-  data: {
-    parameter: 'value',
-    parameter: 'value'
-  },
-  ...</code></pre>
-          </div>
-          <ul>
-            <li class = "fragment"><span class = "blue">data</span>-  a JavaScript object with all the parameters for the AJAX request</li>
-            <li class = "fragment">Some parameters in the <a href = "http://www.meetup.com/meetup_api/docs/2/open_events/" target = "_blank">Meetup open events</a>
-              <ul>
-                <li>key (refers to api key)</li>
-                <li>city</li>
-                <li>topic</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>jQuery Ajax</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">  ...
-  crossDomain: true,
-  dataType: 'jsonp',
-  type: "GET",
-  ...</code></pre>
-          </div>
-          <ul>
-            <li class = "fragment"><span class = "blue">crossDomain</span> - are you sending the request to a domain that is not your own?</li>
-            <li class = "fragment"><span class = "blue">dataType</span> - how will you evaluate the data returned</li>
-            <li class = "fragment"><span class = "blue">type</span> - what type of request is it?
-              <ul>
-                <li>GET - retrieve data</li>
-                <li>POST - post new data</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>jQuery Ajax</h3>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">  ...
-  success: function (data) {
-    // code with data returned
-  },
-  error: function(data) {
-    // code with error returned
-  }
-  ...</code></pre>
-          </div>
-          <ul>
-            <li class = "fragment"><span class = "blue">success</span> - code that will execute if results are sent back successfully</li>
-            <li class = "fragment"><span class = "blue">error</span> - code that will execute if results return an error</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>JSONP</h3>
-          <p class="left-align">It provides a method to request data from a server in a different domain.</p>
-          <br/>
-          <p class="fragment left-align">A security rule called "same origin policy" prevents
-            us from doing this using other methods.</p>
-        </section>
-
-
-        <!-- Exercise-->
-        <section data-state="activity">
-          <section>
-            <h3>Let's Develop It!</h3>
-            <ul>
-              <li>Create a new div with the id "events"</li>
-              <li>Create a new function in your javascript that calls <a href = "http://www.meetup.com/meetup_api/docs/2/open_events/" target = "_blank">Meetup open events</a> method</li>
-              <li>Add zip code parameter to find meetups near you</li>
-              <li>Add the category or topic parameter to find meetups that you would be interested in</li>
-              <li>For now, just look at the results in the console.log()</li>
-              <li>Call this new function in document ready</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Hints</h3>
-            <ul>
-              <li>Use the
-                <a href="http://www.meetup.com/meetup_api/console/?path=/2/open_events">api console</a>
-                to determine what the url should look like.</li>
-              <li>Check out the next slide for an example ajax request</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Hints</h3>
-            <p>Your ajax request should look similar to this.</p>
-            <pre><code contenteditable class = "javascript">  $.ajax({
-    url: "https://api.meetup.com/2/open_events",
-    data: {
-      key: apiKey,
-      topic: "programming",
-      zip: "15217"
-    },
-    crossDomain: true,
-    dataType: 'jsonp',
-    type: "GET",
-    success: function (data) {
-      console.log(data)
-    },
-    error: function(data) {
-      console.log("Error", data);
-    }
-  });</code></pre>
-          </section>
-          <section>
-            <h3>Example</h3>
-            <p>Are you done or really stuck?</p>
-            <p>Check out <a href="class4/01-meetup-ajax/index.html">our example</a>.</p>
-          </section>
-        </section>
-
-        <section>
-          <h3>Let's Develop It!</h3>
-          <img src = "images/console.png"/>
-        </section>
-
-        <section data-state="activity">
-          <section>
-            <h3>Let's Develop It!</h3>
-            <ul>
-              <li>Create a new function that can display the results.</li>
-              <li>Remember that the results will be an array of objects</li>
-              <li>Loop through your results</li>
-              <li>For each result, create a new div</li>
-              <li>Get the name of the event, a link to the event, and the name of the group</li>
-              <li>Append them to your new div</li>
-              <li>Append the new div to the div "events"</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Example</h3>
-            <p>Are you done or really stuck?</p>
-            <p>Check out <a href="class4/02-parse-ajax/index.html">our example</a>.</p>
-          </section>
         </section>
 
         <section>

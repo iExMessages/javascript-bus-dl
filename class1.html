@@ -36,15 +36,6 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-        <section>
-          <h3>Download class materials</h3>
-          <p><a href="http://bit.ly/gdipgh-js-materials">http://bit.ly/gdipgh-js-materials</a></p>
-          <p>This includes the slides.</p>
-          <br/>
-          <h3>Online Slides</h3>
-          <p>You can also access the slides at <a href="http://bit.ly/gdipgh-js-slides">http://bit.ly/gdipgh-js-slides</a></p>
-        </section>
-
 			  <!-- Opening slide -->
         <section>
           <img src = "images/gdi_logo_badge.png">
@@ -52,72 +43,15 @@
           <h4>Class 1</h4>
         </section>
 
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-
-        <section data-state="activity">
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p class = "blue">Tell us about yourself.</p>
-          <ul>
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite dinosaur?</li>
-          </ul>
-          </div>
-        </section>
-
         <section>
           <h3>Goals for the class</h3>
           <ul>
-            <li><strong>Week 1: Intro to JavaScript</strong></li>
-            <li>Week 2: More JavaScript & the DOM</li>
-            <li>Week 3: Intro to jQuery</li>
-            <li>Week 4: AJAX and APIs</li>
+            <li>Quick Review of HTML & CSS</li>
+            <li><strong>Intro to JavaScript</strong></li>
+            <li>More JavaScript & the DOM</li>
+            <li>Intro to jQuery</li>
+            <li>Advanced topics & questions</li>
           </ul>
-        </section>
-
-
-        <!-- Terms-->
-        <section>
-         <h3>Terms</h3>
-         <ul>
-           <li>
-            <div class = "green">Web design</div>
-            <div>The process of planning, structuring and creating a website</div>
-           </li>
-           <li>
-            <div class = "green">Web development</div>
-            <div>The process of programming dynamic web applications</div>
-           </li>
-         </ul>
-        </section>
-
-        <section>
-         <h3>Terms</h3>
-         <ul>
-           <li>
-            <div class = "green">Front end</div>
-            <div>The outwardly visible elements of a website or application.
-            <span class ="blue">(Javascript goes here!)</span></div>
-           </li>
-           <li>
-            <div class = "green">Back end</div>
-            <div>The inner workings and functionality of a website or application.</div>
-           </li>
-         </ul>
         </section>
 
         <!-- Nitty gritty 1 - Clients and servers -->
@@ -199,6 +133,10 @@
             <h3>Open the page in your browser</h3>
             <p>Open <code>index.html</code>.</p>
             <img src="images/browser.png"/>
+          </section>
+          <section>
+            <h3>Note</h3>
+            <p>Our activities throughout the class will <br/>build on each other. Make sure <br/>you keep your work.</p>
           </section>
         </section>
 
@@ -605,7 +543,7 @@
   var weeks_per_year = days_per_year / days_per_week;
           </code></pre>
         </section>
-        <section>
+        <!--section>
           <h3>Arithmetic Expressions: <br/>Modulus (%)</h3>
           <p>Returns the integer remainder of <br/>dividing the two operands.</p>
           <pre><code contenteditable class ="javascript">
@@ -613,24 +551,20 @@
   var people = 7;
   var leftover = grapes % people;
           </code></pre>
-        </section>
+        </section-->
         <section>
           <h3>Arithmetic Expressions: <br/>Increment (++)</h3>
           <p>Increments the value by 1</p>
           <div class="fragment">
-            <p>Postfix - returns the value before adding one.</p>
             <pre><code contenteditable class ="javascript">
     var current_hour = 8;
-    current_hour++; // Returns 8
-    current_hour;   // Returns 9
+    current_hour++;
             </code></pre>
           </div>
           <div class="fragment">
-            <p>Prefix - returns the value after adding one.</p>
             <pre><code contenteditable class ="javascript">
     var current_hour = 8;
-    ++current_hour; // Returns 9
-    current_hour;   // Returns 9
+    current_hour = current_hour + 1;
             </code></pre>
           </div>
         </section>
@@ -638,19 +572,15 @@
           <h3>Arithmetic Expressions: <br/>Decrement (--)</h3>
           <p>Decrease the value by 1</p>
           <div class="fragment">
-            <p>Postfix - returns the value before subtracting one.</p>
             <pre><code contenteditable class ="javascript">
     var current_hour = 8;
-    current_hour--; // Returns 8
-    current_hour;   // Returns 7
+    current_hour--;
             </code></pre>
           </div>
           <div class="fragment">
-            <p>Prefix - returns the value after subtracting one.</p>
             <pre><code contenteditable class ="javascript">
     var current_hour = 8;
-    --current_hour; // Returns 7
-    current_hour;   // Returns 7
+    current_hour = current_hour - 1;
             </code></pre>
           </div>
         </section>
@@ -1103,6 +1033,9 @@
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
             <div class ="clear"></div></div>
+        </section>
+        <section>
+          <a href="class2.html">Let's go to the next set of slides!</a>
         </section>
 			</div>
   		<footer>
