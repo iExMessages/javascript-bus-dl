@@ -738,18 +738,7 @@
           <p>If you want multiple events to happen on the same element, you
              should use the <a href="http://api.jquery.com/on/"><code>on</code></a> method</p>
           <div class = "fragment">
-          <pre><code contenteditable class = "javascript">
-  $('.box').on({
-    click: function() {
-      $(this).css('background-color', 'green')
-    },
-    mouseenter: function() {
-      $(this).css('background-color', 'purple')
-    },
-    mouseleave: function(){
-      $(this).css('background-color', 'orange')
-    }
-  });
+          
           </code></pre>
           </div>
           <a href="class3/event-examples.html" class="fragment">Try it!</a>
@@ -781,49 +770,39 @@
           </section>
         </section>
 
-        <!-- HTML forms-->
+       <!-- JQuery animation -->
         <section>
-          <h3>HTML forms</h3>
-          <p>HTML Forms allow users to enter information</p>
-          <div class = "fragment">
-            <pre><code contenteditable class = "html">
-&lt;form id="about-me">
-  &lt;input type="text" id="name" placeholder="Enter a name"/>
-  &lt;label>Do you like popcorn&lt;/label>
-  Yes &lt;input type= "radio" name="popcorn" val="yes"/>
-  No &lt;input type= "radio" name="popcorn" val="no"/>
-  &lt;label>Favorite Dinosaur&lt;/label>
-  &lt;select id="dinosaur">
-    &lt;option value="t-rex">Tyrannosaurus Rex&lt;/option>
-    &lt;option value="tri">Triceratops&lt;/option>
-    &lt;option value="stego">Stegosaurus&lt;/option>
-    &lt;option value="other">Other&lt;/option>
-  &lt;/select>
-  &lt;input type="submit" value="Go!" style="padding: 7px; font-size:1em;"/>
-&lt;/form>
-            </code></pre>
-          </div>
-        </section>
+          <h3>JQuery Effects</h3>
+          <p>Using effects on a webpage can have a positive impact on the user experience.</p>
+	  <div class = "fragment">
+		<pre><code contenteditable class = "javascript">
+		  $('.box').text("This is showing");
+		  </code></pre>
+	  </div>
+	  <div class = "fragment">
+		<pre><code contenteditable class = "javascript">
+		  $('.box').text("I'm hiding this.");
+		  $('.box').hide( "slow" );
+		  </code></pre>
+	  </div>
+	  <div class = "fragment">
+		<pre><code contenteditable class = "javascript">
+		  $('.box').show( 1250 );
+		  </code></pre>
+	  </div>
+	  <div class = "fragment">
+		<pre><code contenteditable class = "javascript">
+		  $('.box').text("I'm sliding this up: $('.box').slideUp( 600 )");
+		  $('.box').slideUp( 600 );
+		  </code></pre>
+	  </div>
+	  <div class = "fragment">
+		<pre><code contenteditable class = "javascript">
+		  $('.box').text("I'm sliding this down: $('.box').slideDown( 800 )");
+		  $('.box').slideDown( 800 );
+		  </code></pre>
+	  </div>
 
-        <section>
-          <h3>HTML forms</h3>
-          <p>HTML Forms allow users to enter information</p>
-          <div class = "fragment left-align">
-<form>
-  <input type = "text" id = "name" placeholder = "Enter a name" style = "width:300px; padding: 7px; font-size:1em"/><br/>
-  <label>Do you like popcorn</label><br/>
-  Yes <input type = "radio" name = "popcorn" val = "yes" style ="font-size:1em"/>
-  No <input type = "radio" name = "popcorn" val = "no" style ="font-size:1em"/><br/>
-  <label>Favorite Dinosaur</label><br/>
-  <select id = "dinosaur" style = "padding: 7px; font-size:1em">
-    <option>Tyrannosaurus Rex</option>
-    <option>Triceratops</option>
-    <option>Stegosaurus</option>
-    <option>Other</option>
-  </select><br/>
-  <input type = "submit" value = "Go!" style = "padding: 7px; font-size:1em"/>
-</form>
-          </div>
         </section>
 
         <!-- JavaScript and HTML Forms-->
@@ -847,60 +826,16 @@
           </div>
         </section>
 
-        <section>
-          <h3>Values from Forms</h3>
-          <p>jQuery has an event for form submission</p>
-          <div class = "fragment">
-            <pre><code contenteditable class = "javascript">
-  $('#about-me').submit(function(event){
-    //code to execute on submission
-    return false;
-  });
-            </code></pre>
-            <span class = "yellow">"return false"</span> to prevent the form trying
-              <br/> to submit to a server.
-          </div>
-        </section>
-
         <section data-state="activity">
           <section>
             <h3>Let's Develop It!</h3>
             <h4>Forms</h4>
             <ul>
-              <li>Start with your favorite activity calculator</li>
-              <li>Create a form to send dynamic data to the function when you click the button</li>
-              <li>Bonus: check the form input and alert the user if it is invalid</li>
+              <li>Add a new element using jQuery.</li>
+              <li>Add some effects</li>
+              <li>Bonus: add effect based on an event.</li>
             </ul>
           </section>
-          <section>
-            <h3>Hints</h3>
-            <ul>
-              <li>Put a text input in the form to get the name of the activity</li>
-              <li>Put a text input in the form to get the times a month you do
-                  the activity</li>
-              <li>Use <code>return false;</code> to prevent the form from
-                  submitting normally</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Hints</h3>
-            <p>Here's an example form.</p>
-            <pre><code contenteditable class="html">
-  &lt;form id="activitiesForm">
-    &lt;label for="activityName">Activity:&lt;/label>
-    &lt;input type="text" id="activityName" />
-    &lt;label for="timesPerMonth">Times a month:&lt;/label>
-    &lt;input type="text" id="timesPerMonth" />
-    &lt;input type="submit" value="Calculate" />
-  &lt;/form>
-            </code></pre>
-          </section>
-          <section>
-            <h3>Example</h3>
-            <p>Are you done or really stuck?</p>
-            <p>Check out <a href="class3/05-forms/index.html">our example</a>.</p>
-          </section>
-        </section>
 
         <!-- -->
         <section>
